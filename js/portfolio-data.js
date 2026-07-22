@@ -156,10 +156,6 @@ const PORTFOLIO_DATA = {
 
 assets: [
 
-  // ═══════════════════════════════════════════
-  // various-cases / Island Survivor
-  // ═══════════════════════════════════════════
-
   // Images
   { id: 'p2-img-1', projectId: 'various-cases', type: 'images', title: 'Скриншот Геймплея', desc: 'Игрок находится на "базе", выдан квест на улучшение оружия, справа виден ограниченный по времени оффер', thumb: 'assets/portisland1.png', url: 'assets/portisland1.png' },
   { id: 'p2-img-2', projectId: 'various-cases', type: 'images', title: 'Правила левел-дизайна островов', desc: 'Фрагмент документа для левел-дизайнеров.', thumb: 'assets/portislvld1.png', url: 'assets/portislvld1.png' },
@@ -175,10 +171,6 @@ assets: [
   { id: 'p2-sheet-1', projectId: 'various-cases', type: 'sheets', title: 'Island Survivor — таблица макро-баланса', desc: 'Темп прогрессии, давление на рюкзаки, ресурсный дефицит, поток премиальной валюты и ощущение оружия.', thumb: 'assets/portbal.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing' },
 
   { id: 'p3-proto-1', projectId: 'various-cases', type: 'prototypes', title: 'Island Survivor Prototype Alpha', desc: 'Быстрый прототип для тестирования.', thumb: 'assets/prototype.png', url: 'https://island-survivor-game-development-2.vercel.app' },
-
-  // ═══════════════════════════════════════════
-  // indie-vertical-slice / Deep Dark
-  // ═══════════════════════════════════════════
 
   // Images
   { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Deep Dark', desc: 'Первичный визуальный концепт', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
@@ -206,11 +198,6 @@ assets: [
   { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: '3PV spawning animation test ', desc: 'Тестирование анимации возрождения от третьего лица', url: 'https://youtu.be/KiczLO-jhNQ' },
    { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'FPV spawning animation test ', desc: 'Тестирование анимации возрождения от первого лица', url: 'https://youtu.be/izihVmvvrdY' },
 
-
-  // ═══════════════════════════════════════════
-  // mmo-systems / Разное / консалтинг
-  // ═══════════════════════════════════════════
-
   // Images
   { id: 'p1-img-1', projectId: 'mmo-systems', type: 'images', title: 'UX-схема системы инвентаря и переключаемого хотбара', desc: 'Дизайн-схема системы инвентаря игры, решающая проблему ограниченного количества hotbar-ячеек за счёт вложенной системы сабслотов.', thumb: 'assets/controls.jpg', url: 'assets/controls.jpg' },
   { id: 'p3-img-1', projectId: 'mmo-systems', type: 'images', title: 'Rift Divers - концепт-борд препродакшена', desc: 'Визуальный концепт-борд проекта Rift Divers на этапе препродакшена. Содержит mind-map ключевой концепции, три варианта player flow (HUB → миссии → возврат), таблицы систем и данных, атмосферные референсы и материалы по модификации Thaumcraft.', thumb: 'assets/concept.png', url: 'assets/concept.png' },
@@ -228,23 +215,13 @@ assets: [
   // Prototypes
   { id: 'p3-proto-1', projectId: 'mmo-systems', type: 'prototypes', title: 'Web - Azure Wars', desc: 'Быстрый прототип для продвижения Microsoft Azure Database for PostgreSQL.', thumb: 'assets/portdd2.jpg', url: 'https://azure-proto.vercel.app' },
 
-  // ═══════════════════════════════════════════
-  // case-4 / Fantasy MMORPG
-  // ═══════════════════════════════════════════
 
   // Images
   { id: 'p4-img-1', projectId: 'case-4', type: 'images', title: 'DAU 70000+', thumb: 'assets/fantasymmo.png', url: 'assets/fantasymmo.png' },
 
-  // ═══════════════════════════════════════════
-  // case-5 / Action-MMO / Vehicular Combat
-  // ═══════════════════════════════════════════
-
   // Images
   { id: 'p5-img-1', projectId: 'case-5', type: 'images', title: 'DAU 100000+', thumb: 'assets/vehicle.png', url: 'assets/vehicle.png' },
   
-  // ═══════════════════════════════════════════
-  // case-6 / Азиатские MMORPG
-  // ═══════════════════════════════════════════
 
   // Images
   { id: 'p6-img-1', projectId: 'case-6', type: 'images', title: 'DAU 10-70k', thumb: 'assets/draghun.jpg', url: 'assets/draghun.jpg' },

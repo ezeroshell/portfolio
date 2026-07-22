@@ -36,8 +36,8 @@
     const textEl = btn.querySelector('.toggle-text');
     if (!textEl) return;
 
-    // Две версии имени — реальное и псевдоним
-    const REAL   = 'Igor Bakcheev';   // ← настоящее имя
+    
+    const REAL   = 'Igor Bakcheev';   
     const ALT    = 'ezeroshell';
     let isAlt    = false;
     let busy     = false;
@@ -119,7 +119,7 @@
       menu.hidden = false;
       toggleBtn.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
-      // focus first link
+      
       const first = menu.querySelector('a, button');
       if (first) first.focus();
     }
@@ -134,10 +134,10 @@
 
     toggleBtn.addEventListener('click', () => isOpen() ? closeMenu() : openMenu());
 
-    // Закрываем при клике по ссылке
+    
     menu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-    // Закрываем Escape
+    
     document.addEventListener('keydown', e => {
       if (e.key === 'Escape' && isOpen()) {
         closeMenu();
@@ -145,7 +145,7 @@
       }
     });
 
-    // Закрываем при клике вне меню
+    
     document.addEventListener('click', e => {
       if (isOpen() && !menu.contains(e.target) && !toggleBtn.contains(e.target)) {
         closeMenu();
@@ -274,7 +274,7 @@
     const entries = timeline.querySelectorAll('.exp-entry');
     let allExpanded = false;
 
-    // Toggle individual entry
+    
     entries.forEach(entry => {
       const toggleBtn = entry.querySelector('.exp-entry-toggle');
       const body      = entry.querySelector('.exp-body');
@@ -291,14 +291,14 @@
           body.hidden = false;
         }
 
-        // XP for expanding entries
+        
         if (!isOpen && window.XP) {
           XP.add(5, toggleBtn, 'exp-expand-' + entry.dataset.expId);
         }
       });
     });
 
-    // Expand/collapse all
+    
     if (expandBtn) {
       expandBtn.addEventListener('click', () => {
         allExpanded = !allExpanded;

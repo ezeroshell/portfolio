@@ -26,24 +26,24 @@
     grid:  [0, 170, 140],
     node:  [80, 220, 180],
     scan:  [0, 180, 140],
-    // Линии — от дальних к ближним
+    
     l0: [0, 100, 85],
     l1: [0, 135, 110],
     l2: [0, 170, 140],
     l3: [50, 210, 170],
   };
 
-  /* ── Кэш RGBA ── */
+  
   const _s = {};
   function rgba(c, a) {
-    // Округляем alpha до сотых — меньше уникальных строк
+    
     const ra = (a * 100 + 0.5) | 0;
     const k = c[0] * 1000000 + c[1] * 10000 + c[2] * 100 + ra;
     return _s[k] || (_s[k] = 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + (ra * 0.01) + ')');
   }
   function rgb(c) { return 'rgb(' + c[0] + ',' + c[1] + ',' + c[2] + ')'; }
 
-  /* ── Sin LUT ── */
+  
   const SN = 1024;
   const SL = new Float32Array(SN);
   for (let i = 0; i < SN; i++) SL[i] = Math.sin(i / SN * PI2);
@@ -62,11 +62,11 @@
   const GRID_DOT = 0.7;
   const GRID_DOT_A = 0.06;
 
-  // Дыхание сцены
+  
   const BREATHE_SPEED = 0.15;
   const BREATHE_AMP = 0.12;
 
-  // Секущие линии — 4 слоя глубины
+  
   const LL = [
     { n: isMobile ? 2 : 4, w: .3,  a: .025, spd: [3, 8],   c: C.l0, par: .003, dash: true },
     { n: isMobile ? 2 : 4, w: .6,  a: .04,  spd: [6, 15],  c: C.l1, par: .010, dash: true },
@@ -74,22 +74,22 @@
     { n: isMobile ? 1 : 2, w: 2.0, a: .10,  spd: [20, 50], c: C.l3, par: .045, dash: false },
   ];
 
-  // Сканлайн
+  
   const SCAN = !isLowEnd;
   const SC_SPD = 50;
   const SC_W = 80;
   const SC_A = 0.04;
   const SC_WAIT = 8;
 
-  // Курсорные узлы
+  
   const NODE_R = 160;
 
   /* ═══════════════════════════════════════════
      STATE
      ═══════════════════════════════════════════ */
   let W = 0, H = 0, W2 = 0, H2 = 0;
-  let backLines = [];   // слои 0-1 (под всем)
-  let frontLines = [];  // слои 2-3 (поверх)
+  let backLines = [];   
+  let frontLines = [];  
   let mx, my, smx, smy;
   let raf = 0, vis = true, lastMs = 0, resizeT;
   let t = 0, lt = 0;
@@ -99,7 +99,7 @@
   let gridOC = null, scanOC = null;
   let gridDirty = true, scanDirty = true;
 
-  /* ───────── resize ───────── */
+  
   function resize() {
     if (useHiDPI) {
       W = window.innerWidth; H = window.innerHeight;
@@ -130,7 +130,7 @@
     const g = gridOC.getContext('2d');
     g.clearRect(0, 0, gw, gh);
 
-    // Единая сетка
+    
     g.strokeStyle = rgba(C.grid, GRID_A);
     g.lineWidth = GRID_LW;
     g.beginPath();
@@ -138,7 +138,7 @@
     for (let y = 0; y <= gh; y += sp) { g.moveTo(0, y); g.lineTo(gw, y); }
     g.stroke();
 
-    // Узловые точки
+    
     g.fillStyle = rgba(C.grid, GRID_DOT_A);
     for (let x = 0; x <= gw; x += sp) {
       for (let y = 0; y <= gh; y += sp) {
@@ -158,7 +158,7 @@
   function bakeScan() {
     const h = SC_W * 2;
     if (!scanOC) scanOC = document.createElement('canvas');
-    scanOC.width = 1;   // 1px wide — растянем при отрисовке
+    scanOC.width = 1;   
     scanOC.height = h;
 
     const g = scanOC.getContext('2d');
@@ -217,7 +217,7 @@
       wavePh: Math.random() * PI2,
       waveAmp: 0.3 + Math.random() * 0.5,
       dash: L.dash,
-      // Sweep: серия точек вместо градиента
+      
       sweepDots: 3 + Math.floor(Math.random() * 4),
       sweepSpan: 30 + L.w * 25,
     };
@@ -238,10 +238,10 @@
 
       if (doMove) {
         l.pos += l.spd * dt;
-        // Волнообразный дрейф
+        
         l.perp += l.drift * dt + fsin(t * l.waveAmp + l.wavePh) * 0.15 * dt;
 
-        // Bounds
+        
         const axMax = l.h ? W : H;
         if ((l.spd > 0 && l.pos > axMax + 100) ||
             (l.spd < 0 && l.pos < -100)) {
@@ -257,7 +257,7 @@
       const alpha = l.a * pulse * (1 + breathe * 0.5);
       if (alpha < 0.004) continue;
 
-      // Координаты
+      
       let perpCoord;
       if (l.h) {
         perpCoord = l.perp + py;
@@ -267,7 +267,7 @@
         if (perpCoord < -30 || perpCoord > W + 30) continue;
       }
 
-      // Реакция на курсор — линии рядом с мышью чуть ярче
+      
       let proxBoost = 0;
       if (!isMobile) {
         const perpMouse = l.h ? smy : smx;
@@ -277,13 +277,13 @@
 
       const finalA = Math.min(alpha + proxBoost * l.a, 0.3);
 
-      // Dash для дальних слоёв
+      
       if (l.dash) {
         ctx.setLineDash([2, GRID_SP - 2]);
         ctx.lineDashOffset = -t * l.spd * 0.3;
       }
 
-      // Основная линия
+      
       ctx.lineWidth = l.w;
       ctx.strokeStyle = rgba(l.c, finalA);
       ctx.beginPath();
@@ -300,7 +300,7 @@
         ctx.setLineDash([]);
       }
 
-      // Sweep — серия точек вместо градиента
+      
       const sweepX = l.h ? l.pos + px : perpCoord;
       const sweepY = l.h ? perpCoord : l.pos + py;
 
@@ -314,10 +314,10 @@
         ctx.fillStyle = rgb(l.c);
 
         for (let d = 0; d < dots; d++) {
-          // Распределяем точки от головы к хвосту
+          
           const frac = d / (dots - 1 || 1);
           const offset = (frac - 0.5) * span * 2;
-          const dotA = sa * (1 - frac * 0.7);  // голова ярче, хвост тусклее
+          const dotA = sa * (1 - frac * 0.7);  
           const dotR = l.w * (1.8 - frac * 0.8);
 
           if (dotA < 0.005) continue;
@@ -337,13 +337,13 @@
           ctx.fill();
         }
 
-        // Яркое ядро
+        
         ctx.globalAlpha = sa * 0.6;
         ctx.beginPath();
         ctx.arc(sweepX, sweepY, l.w * 2.5, 0, PI2);
         ctx.fill();
 
-        // Ореол для ближних
+        
         if (l.li >= 2) {
           ctx.globalAlpha = sa * 0.08;
           ctx.beginPath();
@@ -375,7 +375,7 @@
 
     const nc = C.node;
 
-    // Batch: один fillStyle, меняем только globalAlpha
+    
     ctx.fillStyle = rgb(nc);
 
     for (let c = c0; c <= c1; c++) {
@@ -383,7 +383,7 @@
       const ddx = nx - smx;
       const ddx2 = ddx * ddx;
 
-      // Ранний отсев по X
+      
       if (ddx2 > r2) continue;
 
       for (let ri = r0; ri <= r1; ri++) {
@@ -428,11 +428,11 @@
       return;
     }
 
-    // Растягиваем 1px-wide полосу на всю ширину
+    
     if (scanDirty) bakeScan();
     ctx.drawImage(scanOC, 0, 0, 1, SC_W * 2, 0, scanY - SC_W, W, SC_W * 2);
 
-    // Тонкая яркая линия
+    
     ctx.strokeStyle = rgba(C.scan, SC_A * 3);
     ctx.lineWidth = 0.5;
     ctx.beginPath();
@@ -454,8 +454,8 @@
 
     ctx.clearRect(0, 0, W, H);
 
-    // Сглаживание мыши (framerate-independent)
-    const e = dt * 5;  // ~0.083 при 60fps, линейная аппроксимация exp decay
+    
+    const e = dt * 5;  
     const ef = e > 1 ? 1 : e;
     smx += (mx - smx) * ef;
     smy += (my - smy) * ef;
@@ -465,7 +465,7 @@
     const gox = cx * GRID_PAR;
     const goy = cy * GRID_PAR;
 
-    // Дыхание сцены
+    
     const breathe = fsin(t * BREATHE_SPEED) * BREATHE_AMP;
 
     /*  Порядок слоёв:
@@ -476,26 +476,26 @@
         5  Ближние линии (сплошные, толстые)
     */
 
-    // 1. Сетка
+    
     if (gridDirty) bakeGrid();
     ctx.drawImage(gridOC, -80 + gox, -80 + goy);
 
-    // 2. Дальние линии
+    
     drawLines(backLines, dt, cx, cy, breathe, true);
 
-    // 3. Узлы
+    
     drawNodes(gox, goy, breathe);
 
-    // 4. Скан
+    
     drawScan(dt);
 
-    // 5. Ближние линии
+    
     drawLines(frontLines, dt, cx, cy, breathe, true);
 
     raf = requestAnimationFrame(frame);
   }
 
-  /* ───────── Events ───────── */
+  
   document.addEventListener('visibilitychange', () => {
     vis = !document.hidden;
     if (vis) { lt = 0; raf = requestAnimationFrame(frame); }
@@ -529,7 +529,7 @@
     if (!vis && !document.hidden) { vis = true; lt = 0; raf = requestAnimationFrame(frame); }
   });
 
-  /* ───────── Init ───────── */
+  
   resize();
   mx = W2; my = H2; smx = mx; smy = my;
   buildLines();
