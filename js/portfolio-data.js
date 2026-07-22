@@ -59,8 +59,8 @@ const PORTFOLIO_DATA = {
 
     {
       id: 'mmo-systems',
-      title: 'Freelance / Проектная работа',
-      subtitle: 'Прототипы, аудиты и прикладные геймдизайнерские задачи',
+      title: 'Freelance / Различные навыки',
+      subtitle: 'Документация, аудиты и прикладные геймдизайнерские задачи',
       period: '2025 — н.в.',
       role: 'Геймдизайнер / Консультант',
       summary: 'Набор небольших и средних проектных задач: маркетинговые и обучающие игры, быстрые прототипы, F2P-мета-слои, аудит FTUE, документации и балансных моделей для внешних команд и заказчиков.',
@@ -87,7 +87,7 @@ const PORTFOLIO_DATA = {
       subtitle: 'Экономика, туториал и PvP-матчмейкинг',
       period: '2013 — 2015',
       role: 'Геймдизайнер / Экономический дизайнер',
-      summary: 'Классическая fantasy MMORPG с крафтом, фармом и PvP. В рамках проекта отвечал за проектирование рынка между игроками, переработку раннего обучения и ребаланс PvP-подбора по силе экипировки.',
+      summary: 'Классическая fantasy MMORPG с крафтом, фармом и PvP, DAU 70k+. В рамках проекта отвечал за проектирование рынка между игроками, переработку раннего обучения и ребаланс PvP-подбора по силе экипировки.',
       tags: ['MMORPG', 'PC', 'экономика', 'рынок между игроками', 'PvP', 'матчмейкинг', 'FTUE', 'retention', 'баланс'],
       link: null,
       responsibilities: [
@@ -111,7 +111,7 @@ const PORTFOLIO_DATA = {
       subtitle: 'Монетизация, экономика и player journey',
       period: '2015 — 2018',
       role: 'Старший геймдизайнер / Экономический дизайнер',
-      summary: 'Action-MMO с крафтом боевых машин и глубокой рыночной экономикой. Основные задачи: управление инфляцией, повышение конверсии в первую покупку и интеграция монетизации в player journey.',
+      summary: 'Action-MMO с крафтом боевых машин и глубокой рыночной экономикой, DAU 100k+. Основные задачи: управление инфляцией, повышение конверсии в первую покупку и интеграция монетизации в player journey.',
       tags: ['MMO', 'F2P', 'PC', 'монетизация', 'экономика', 'player journey', 'A/B-тесты', 'ARPDAU', 'LTV'],
       link: null,
       responsibilities: [
@@ -135,7 +135,7 @@ const PORTFOLIO_DATA = {
       subtitle: 'Retention, монетизация и mid-game плато',
       period: '2018 — 2022',
       role: 'Ведущий геймдизайнер / Системный дизайнер',
-      summary: 'Работа на нескольких MMORPG-проектах, азиатский рынок. Основной фокус: ранний player journey, сегментированная монетизация, борьба с оттоком на среднем этапе прогрессии и развитие социальных механик удержания.',
+      summary: 'Работа на нескольких MMORPG-проектах, азиатский рынок, DAU 100k+. Основной фокус: ранний player journey, сегментированная монетизация, борьба с оттоком на среднем этапе прогрессии и развитие социальных механик удержания.',
       tags: ['MMORPG', 'F2P', 'mobile', 'PC', 'retention', 'монетизация', 'player journey', 'LiveOps', 'прогрессия', 'сегментация'],
       link: null,
       responsibilities: [
@@ -174,6 +174,7 @@ assets: [
   // Sheets
   { id: 'p2-sheet-1', projectId: 'various-cases', type: 'sheets', title: 'Island Survivor — таблица макро-баланса', desc: 'Темп прогрессии, давление на рюкзаки, ресурсный дефицит, поток премиальной валюты и ощущение оружия.', thumb: 'assets/portbal.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing' },
 
+  { id: 'p3-proto-1', projectId: 'various-cases', type: 'prototypes', title: 'Island Survivor Prototype Alpha', desc: 'Быстрый прототип для тестирования.', thumb: 'assets/portdd2.jpg', url: 'https://island-survivor-game-development-2.vercel.app' },
 
   // ═══════════════════════════════════════════
   // indie-vertical-slice / Deep Dark
@@ -186,7 +187,7 @@ assets: [
   { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Craft Feature Spec', desc: 'Спецификация по системе крафта', thumb: 'assets/craftfeature.png', url: 'assets/craftfeature.png' },
   { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Biomes Feature Spec', desc: 'Спецификация по системе биомов', thumb: 'assets/biomefeature.png', url: 'assets/biomefeature.png' },
   { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Anomalies Event Feature Spec', desc: 'Спецификация по системе процедурных ивентов с аномалиями', thumb: 'assets/anomalies.png', url: 'assets/anomalies.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Inventory UI blocking', desc: 'Блокинг работы хотбара и инвентаря', thumb: 'assets/controls.jpg', url: 'assets/controls.jpg' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Коллаж документации по проекту', desc: 'Демонстрация количества документов и описанных фич.', thumb: 'assets/docs.png', url: 'assets/docs.png' },
   { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Drill Control UI blocking', desc: 'Блокинг управления движением бура', thumb: 'assets/drillcontrols.png', url: 'assets/drillcontrols.png' },
   { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Level Design Spec', desc: 'Спецификация по левел-дизайну мира', thumb: 'assets/leveld.jpg', url: 'assets/leveld.jpg' },
   { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Enemy AI spec', desc: 'Спецификация интеллекта противника', thumb: 'assets/aispec.png', url: 'assets/aispec.png' },
@@ -204,8 +205,6 @@ assets: [
   { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Worm Combat Prototyping ', desc: 'Прототип сражения с противником', url: 'https://youtu.be/em_6Gm1TQWw' },
   { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: '3PV spawning animation test ', desc: 'Тестирование анимации возрождения от третьего лица', url: 'https://youtu.be/KiczLO-jhNQ' },
    { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'FPV spawning animation test ', desc: 'Тестирование анимации возрождения от первого лица', url: 'https://youtu.be/izihVmvvrdY' },
-  // Other
-  { id: 'p1-other-1', projectId: 'indie-vertical-slice', type: 'other', title: 'Референсы и визуальная подготовка', desc: 'Материалы по визуальному направлению и подготовке окружения.', thumb: 'assets/portislvld2.jpg', url: null },
 
 
   // ═══════════════════════════════════════════
@@ -213,22 +212,10 @@ assets: [
   // ═══════════════════════════════════════════
 
   // Images
-  { id: 'p3-img-1', projectId: 'mmo-systems', type: 'images', title: 'Баланс-таблица', desc: 'Фрагмент для F2P.', thumb: 'assets/portbal.png', url: 'assets/portbal.png' },
-  { id: 'p3-img-2', projectId: 'mmo-systems', type: 'images', title: 'Дерево диалогов', desc: 'Ветвления и флаги.', thumb: 'assets/portdd1.png', url: 'assets/portdd1.png' },
-  { id: 'p3-img-3', projectId: 'mmo-systems', type: 'images', title: 'Квестовые цепочки', desc: 'Условия и последствия.', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-
+  { id: 'p1-img-1', projectId: 'mmo-systems', type: 'images', title: 'UX-схема системы инвентаря и переключаемого хотбара', desc: 'Дизайн-схема системы инвентаря игры, решающая проблему ограниченного количества hotbar-ячеек за счёт вложенной системы сабслотов.', thumb: 'assets/controls.jpg', url: 'assets/controls.jpg' },
+  { id: 'p3-img-1', projectId: 'mmo-systems', type: 'images', title: 'Rift Divers - концепт-борд препродакшена', desc: 'Визуальный концепт-борд проекта Rift Divers на этапе препродакшена. Содержит mind-map ключевой концепции, три варианта player flow (HUB → миссии → возврат), таблицы систем и данных, атмосферные референсы и материалы по модификации Thaumcraft.', thumb: 'assets/concept.png', url: 'assets/concept.png' },
+  { id: 'p3-img-3', projectId: 'mmo-systems', type: 'images', title: 'Slime Tech - Godot 3D', desc: 'Проектирование процедурной генерации тайлового мира для 3D-изометрического проекта. Двухслойная архитектура: статический слой terrain-генерации и runtime-слой разреженного чанкового хранилища сущностей, предметов и эффектов.', thumb: 'assets/slimegame.png', url: 'assets/slimegame.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Монетизация для проекта Minecraft (DAU 16000+)', desc: 'Коммерческий заказ на проектирование системы монетизации и отрисовку интерфейсов для проекта Minecraft.', thumb: 'assets/mc_int1.png', url: 'assets/mc_int1.png' },
 
   // Docs
   { id: 'p3-doc-2', projectId: 'mmo-systems', type: 'docs', title: 'Маркетинговая игра / автобаттлер', desc: 'Документ по игровому прототипу для внешней презентационной задачи.', thumb: 'assets/portdd1.png', url: 'https://docs.google.com/document/d/1dYlUL_3MdEi0DdIy9tmsDItKH-pLdLVMMMSFcSClCHU/edit?usp=sharing' },
@@ -238,99 +225,30 @@ assets: [
   // Sheets
   { id: 'p3-sheet-1', projectId: 'mmo-systems', type: 'sheets', title: 'Mobile RPG - Narrative Event Matrix', desc: 'Структурированная база данных энкаунтеров (событий), учитывающая параметры персонажа (возраст, пол, статус) и предлагающая ветвление на основе проверок характеристик (Charisma, Intellegence, Will и др.).', thumb: 'assets/portnar.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing'},
 
-  // Videos
-  { id: 'p3-vid-1', projectId: 'mmo-systems', type: 'videos', title: 'Препродакшн-видео', desc: 'Сборка слайдов, гифок, музыки и таймлайна для теста атмосферы будущего проекта.', thumb: 'assets/portnar.png', url: null },
-
   // Prototypes
-  { id: 'p3-proto-1', projectId: 'mmo-systems', type: 'prototypes', title: 'Веб-прототип', desc: 'Быстрый прототип для презентации или теста гипотез.', thumb: 'assets/portdd2.jpg', url: null },
-
-  // Other
-  { id: 'p3-other-1', projectId: 'mmo-systems', type: 'other', title: 'Подборка мелких кейсов', desc: 'Небольшие задачи по консалтингу, прототипированию и проектной документации.', thumb: 'assets/portbal.png', url: null },
-
+  { id: 'p3-proto-1', projectId: 'mmo-systems', type: 'prototypes', title: 'Web - Azure Wars', desc: 'Быстрый прототип для продвижения Microsoft Azure Database for PostgreSQL.', thumb: 'assets/portdd2.jpg', url: 'https://azure-proto.vercel.app' },
 
   // ═══════════════════════════════════════════
   // case-4 / Fantasy MMORPG
   // ═══════════════════════════════════════════
 
   // Images
-  { id: 'p4-img-1', projectId: 'case-4', type: 'images', title: 'Баланс-таблица', desc: 'Фрагмент экономической модели.', thumb: 'assets/portbal.png', url: 'assets/portbal.png' },
-  { id: 'p4-img-2', projectId: 'case-4', type: 'images', title: 'Схема систем', desc: 'Визуальная структура проекта.', thumb: 'assets/portdd1.png', url: 'assets/portdd1.png' },
-  { id: 'p4-img-3', projectId: 'case-4', type: 'images', title: 'Квестовые цепочки', desc: 'Условия и последствия.', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
-  { id: 'p4-img-4', projectId: 'case-4', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-
-  // Docs
-  { id: 'p4-doc-1', projectId: 'case-4', type: 'docs', title: 'Рынок между игроками и экономика', desc: 'Проектирование аукционной системы, стоков и антиинфляционных механизмов.', thumb: 'assets/portdd1.png', url: null },
-  { id: 'p4-doc-2', projectId: 'case-4', type: 'docs', title: 'Переработка туториала', desc: 'Анализ воронки обучения и изменения раннего пользовательского опыта.', url: null },
-  { id: 'p4-doc-3', projectId: 'case-4', type: 'docs', title: 'PvP-матчмейкинг', desc: 'Разделение игроков по брекетам силы экипировки и защита новичков.', url: null },
-
-  // Sheets
-  { id: 'p4-sheet-1', projectId: 'case-4', type: 'sheets', title: 'Экономическая модель', desc: 'Модель потоков золота, ресурсов, крафта и рыночных стоков.', thumb: 'assets/portbal.png', url: null },
-
-  // Videos
-  { id: 'p4-vid-1', projectId: 'case-4', type: 'videos', title: 'Обзор экономических систем', desc: 'Видеоразбор рынка и антиинфляционных механизмов. Материал под NDA — доступен на интервью.', thumb: 'assets/portnar.png', url: null },
-
-  // Prototypes
-  { id: 'p4-proto-1', projectId: 'case-4', type: 'prototypes', title: 'Симуляция рынка', desc: 'Прототип модели рыночного ценообразования. Материал под NDA — доступен на интервью.', thumb: 'assets/portdd2.jpg', url: null },
-
-  // Other
-  { id: 'p4-other-1', projectId: 'case-4', type: 'other', title: 'Материалы под NDA', desc: 'Более детальные документы и метрики доступны для обсуждения на интервью.', thumb: 'assets/portbal.png', url: null },
-
+  { id: 'p4-img-1', projectId: 'case-4', type: 'images', title: 'DAU 70000+', thumb: 'assets/fantasymmo.png', url: 'assets/fantasymmo.png' },
 
   // ═══════════════════════════════════════════
   // case-5 / Action-MMO / Vehicular Combat
   // ═══════════════════════════════════════════
 
   // Images
-  { id: 'p5-img-1', projectId: 'case-5', type: 'images', title: 'Баланс-таблица', desc: 'Фрагмент экономической модели.', thumb: 'assets/portbal.png', url: 'assets/portbal.png' },
-  { id: 'p5-img-2', projectId: 'case-5', type: 'images', title: 'Схема систем', desc: 'Визуальная структура проекта.', thumb: 'assets/portdd1.png', url: 'assets/portdd1.png' },
-  { id: 'p5-img-3', projectId: 'case-5', type: 'images', title: 'Квестовые цепочки', desc: 'Условия и последствия.', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
-  { id: 'p5-img-4', projectId: 'case-5', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-
-  // Docs
-  { id: 'p5-doc-1', projectId: 'case-5', type: 'docs', title: 'Конверсия в первую покупку', desc: 'Разбор стартового оффера, тайминга показа и A/B-тестирования.', thumb: 'assets/portdd1.png', url: null },
-  { id: 'p5-doc-2', projectId: 'case-5', type: 'docs', title: 'Экономика и управляемая инфляция', desc: 'Подход к контролю инфляции и полезности старых предметов при обновлениях.', url: null },
-  { id: 'p5-doc-3', projectId: 'case-5', type: 'docs', title: 'Монетизация в player journey', desc: 'Контекстные офферы, связанные с этапом прогрессии и проблемой игрока.', url: null },
-
-  // Sheets
-  { id: 'p5-sheet-1', projectId: 'case-5', type: 'sheets', title: 'A/B-тесты и метрики', desc: 'Сводка по ключевым метрикам: конверсия, ARPDAU, LTV.', thumb: 'assets/portbal.png', url: null },
-
-  // Videos
-  { id: 'p5-vid-1', projectId: 'case-5', type: 'videos', title: 'Обзор монетизации и player journey', desc: 'Видеоразбор интеграции офферов в прогрессию. Материал под NDA — доступен на интервью.', thumb: 'assets/portnar.png', url: null },
-
-  // Prototypes
-  { id: 'p5-proto-1', projectId: 'case-5', type: 'prototypes', title: 'Симуляция экономики', desc: 'Прототип модели инфляции и стоков. Материал под NDA — доступен на интервью.', thumb: 'assets/portdd2.jpg', url: null },
-
-  // Other
-  { id: 'p5-other-1', projectId: 'case-5', type: 'other', title: 'Материалы под NDA', desc: 'Подробные данные и дополнительные кейсы доступны на интервью.', thumb: 'assets/portbal.png', url: null },
-
-
+  { id: 'p5-img-1', projectId: 'case-5', type: 'images', title: 'DAU 100000+', thumb: 'assets/vehicle.png', url: 'assets/vehicle.png' },
+  
   // ═══════════════════════════════════════════
   // case-6 / Азиатские MMORPG
   // ═══════════════════════════════════════════
 
   // Images
-  { id: 'p6-img-1', projectId: 'case-6', type: 'images', title: 'Баланс-таблица', desc: 'Фрагмент экономической модели.', thumb: 'assets/portbal.png', url: 'assets/portbal.png' },
-  { id: 'p6-img-2', projectId: 'case-6', type: 'images', title: 'Схема систем', desc: 'Визуальная структура проекта.', thumb: 'assets/portdd1.png', url: 'assets/portdd1.png' },
-  { id: 'p6-img-3', projectId: 'case-6', type: 'images', title: 'Квестовые цепочки', desc: 'Условия и последствия.', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
-  { id: 'p6-img-4', projectId: 'case-6', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
-
-  // Docs
-  { id: 'p6-doc-1', projectId: 'case-6', type: 'docs', title: 'Ранний player journey и D7 retention', desc: 'Переработка первых дней прогрессии и раннего удержания.', thumb: 'assets/portdd1.png', url: null },
-  { id: 'p6-doc-2', projectId: 'case-6', type: 'docs', title: 'Сегментация офферов и рост среднего чека', desc: 'Монетизация по этапам прогрессии и типам игроков.', url: null },
-  { id: 'p6-doc-3', projectId: 'case-6', type: 'docs', title: 'Снижение оттока на mid-game этапе', desc: 'Ротации контента, социальные механики и мягкая динамическая сложность.', url: null },
-
-  // Sheets
-  { id: 'p6-sheet-1', projectId: 'case-6', type: 'sheets', title: 'Карты прогрессии и удержания', desc: 'Рабочие схемы player journey, этапов прогрессии и точек просадки.', thumb: 'assets/portbal.png', url: null },
-
-  // Videos
-  { id: 'p6-vid-1', projectId: 'case-6', type: 'videos', title: 'Обзор retention-механик', desc: 'Видеоразбор подходов к удержанию и борьбе с mid-game оттоком. Материал под NDA — доступен на интервью.', thumb: 'assets/portnar.png', url: null },
-
-  // Prototypes
-  { id: 'p6-proto-1', projectId: 'case-6', type: 'prototypes', title: 'Модель прогрессии', desc: 'Прототип расчёта темпа прогрессии и точек оттока. Материал под NDA — доступен на интервью.', thumb: 'assets/portdd2.jpg', url: null },
-
-  // Other
-  { id: 'p6-other-1', projectId: 'case-6', type: 'other', title: 'Материалы под NDA', desc: 'Расширенные материалы и численные детали доступны на интервью.', thumb: 'assets/portbal.png', url: null }
-]
+  { id: 'p6-img-1', projectId: 'case-6', type: 'images', title: 'DAU 10-70k', thumb: 'assets/draghun.jpg', url: 'assets/draghun.jpg' },
+ ]
 };
 
 window.PORTFOLIO_DATA = PORTFOLIO_DATA;
