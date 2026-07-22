@@ -34,7 +34,7 @@ const PORTFOLIO_DATA = {
 
     {
       id: 'indie-vertical-slice',
-      title: 'Deep Dark',
+      title: 'Deep Dark PC/Steam, Unity Coop Action',
       subtitle: 'Инди-проект: от концепции до вертикального среза',
       period: '2024 — 2025',
       role: 'Ведущий геймдизайнер / Системный дизайнер',
@@ -53,13 +53,13 @@ const PORTFOLIO_DATA = {
         'Собран играбельный вертикальный срез с рабочими ключевыми системами',
         'Реализован базовый игровой цикл: исследование, сбор ресурсов, крафт и улучшение',
         'Собрана система прогрессии с поэтапным открытием ресурсов и механик',
-        'Подготовлена документационная база для дальнейшего развития проекта'
+        'Подготовлена документационная база для дальнейшего развития проекта (более 200 рабочих документов по всем системам и фичам)'
       ]
     },
 
     {
       id: 'mmo-systems',
-      title: 'Разное / консалтинг',
+      title: 'Freelance / Проектная работа',
       subtitle: 'Прототипы, аудиты и прикладные геймдизайнерские задачи',
       period: '2025 — н.в.',
       role: 'Геймдизайнер / Консультант',
@@ -164,7 +164,7 @@ assets: [
   { id: 'p2-img-1', projectId: 'various-cases', type: 'images', title: 'Скриншот Геймплея', desc: 'Игрок находится на "базе", выдан квест на улучшение оружия, справа виден ограниченный по времени оффер', thumb: 'assets/portisland1.png', url: 'assets/portisland1.png' },
   { id: 'p2-img-2', projectId: 'various-cases', type: 'images', title: 'Правила левел-дизайна островов', desc: 'Фрагмент документа для левел-дизайнеров.', thumb: 'assets/portislvld1.png', url: 'assets/portislvld1.png' },
   { id: 'p2-img-3', projectId: 'various-cases', type: 'images', title: 'Схема левел-дизайна переданная в продакшн', desc: 'Размечены POI с применяемыми в движке обозначениями.', thumb: 'assets/portislvld.png', url: 'assets/portislvld.png' },
-  { id: 'p2-img-4', projectId: 'various-cases', type: 'images', title: 'Итоговый результат сбора в движке (Unity)', desc: 'Созданы меши, шейдер, размещены точки появления ресурсов, противников, harvestables, POI и т.д. Далее проводится тестирование и корректировка баланса и левел-дизайна на основе результатов.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p2-img-4', projectId: 'various-cases', type: 'images', title: 'Итоговый результат сбора в движке (Unity)', desc: 'Созданы меши, шейдер, размещены точки появления ресурсов, противников, harvestables, POI и т.д. Далее проводится тестирование и корректировка баланса и левел-дизайна на основе результатов.', thumb: 'assets/portislvld3.jpg', url: 'assets/portislvld3.jpg' },
 
   // Docs
   { id: 'p2-doc-1', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — дизайн-документ MVP', desc: 'Полный GDD проекта: core loop, прогрессия, экономика, монетизация и аналитика.', thumb: 'assets/portdd1.png', url: 'https://docs.google.com/document/d/17FeHS-Vmx8KzNHYJenV9im53vE5A-2xo47xj1o6c7Ew/edit?usp=sharing' },
@@ -174,43 +174,36 @@ assets: [
   // Sheets
   { id: 'p2-sheet-1', projectId: 'various-cases', type: 'sheets', title: 'Island Survivor — таблица макро-баланса', desc: 'Темп прогрессии, давление на рюкзаки, ресурсный дефицит, поток премиальной валюты и ощущение оружия.', thumb: 'assets/portbal.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing' },
 
-  // Videos
-  { id: 'p2-vid-1', projectId: 'various-cases', type: 'videos', title: 'Обзор систем Island Survivor', desc: 'Видеоразбор ключевых систем и прогрессии проекта.', thumb: 'assets/portnar.png', url: null },
-
-  // Prototypes
-  { id: 'p2-proto-1', projectId: 'various-cases', type: 'prototypes', title: 'Интерактивная схема core loop', desc: 'Интерактивная демонстрация экспедиционной петли.', thumb: 'assets/portdd2.jpg', url: null },
-
-  // Other
-  { id: 'p2-other-1', projectId: 'various-cases', type: 'other', title: 'Island Survivor — полный кейс проекта', desc: 'Комплект документов по проекту: MVP, баланс, левел-дизайн и фичевая документация.', thumb: 'assets/portbal.png', url: null },
-
 
   // ═══════════════════════════════════════════
   // indie-vertical-slice / Deep Dark
   // ═══════════════════════════════════════════
 
   // Images
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Deep Dark — общий вид уровня', desc: 'Level blockout в Unity.', thumb: 'assets/portisland.png', url: 'assets/portisland.png' },
-  { id: 'p1-img-2', projectId: 'indie-vertical-slice', type: 'images', title: 'Deep Dark — окружение', desc: 'Детализация и расстановка объектов.', thumb: 'assets/portisland1.png', url: 'assets/portisland1.png' },
-  { id: 'p1-img-3', projectId: 'indie-vertical-slice', type: 'images', title: 'Процедурный уровень A', desc: 'Генерация карты с POI.', thumb: 'assets/portislvld.png', url: 'assets/portislvld.png' },
-  { id: 'p1-img-4', projectId: 'indie-vertical-slice', type: 'images', title: 'Процедурный уровень B', desc: 'Альтернативная компоновка карты.', thumb: 'assets/portislvld1.png', url: 'assets/portislvld1.png' },
-  { id: 'p1-img-5', projectId: 'indie-vertical-slice', type: 'images', title: 'Биомы и POI', desc: 'Распределение биомов и точек интереса.', thumb: 'assets/portislvld2.jpg', url: 'assets/portislvld2.jpg' },
-  { id: 'p1-img-6', projectId: 'indie-vertical-slice', type: 'images', title: 'Финальный уровень', desc: 'Вертикальный срез проекта.', thumb: 'assets/portislvld3.jpg', url: 'assets/portislvld3.jpg' },
-
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Deep Dark', desc: 'Первичный визуальный концепт', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Визуал вертикального среза', desc: 'Результат работы команды на момент готовности среза', thumb: 'assets/ddslice.jpg', url: 'assets/ddslice.jpg' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Global Core Loop', desc: 'Глобальная игровая петля', thumb: 'assets/coreloop.png', url: 'assets/coreloop.png' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Craft Feature Spec', desc: 'Спецификация по системе крафта', thumb: 'assets/craftfeature.png', url: 'assets/craftfeature.png' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Biomes Feature Spec', desc: 'Спецификация по системе биомов', thumb: 'assets/biomefeature.png', url: 'assets/biomefeature.png' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Anomalies Event Feature Spec', desc: 'Спецификация по системе процедурных ивентов с аномалиями', thumb: 'assets/anomalies.png', url: 'assets/anomalies.png' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Inventory UI blocking', desc: 'Блокинг работы хотбара и инвентаря', thumb: 'assets/controls.jpg', url: 'assets/controls.jpg' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Drill Control UI blocking', desc: 'Блокинг управления движением бура', thumb: 'assets/drillcontrols.png', url: 'assets/drillcontrols.png' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Level Design Spec', desc: 'Спецификация по левел-дизайну мира', thumb: 'assets/leveld.jpg', url: 'assets/leveld.jpg' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Enemy AI spec', desc: 'Спецификация интеллекта противника', thumb: 'assets/aispec.png', url: 'assets/aispec.png' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Interior Blocking', desc: 'Блокинг интерьера', thumb: 'assets/interior.jpg', url: 'assets/interior.jpg' },
+  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Interior Result', desc: 'Результат работы команды над интерьером', thumb: 'assets/interiorfin.png', url: 'assets/interiorfin.png' },
   // Docs
-  { id: 'p1-doc-1', projectId: 'indie-vertical-slice', type: 'docs', title: 'Deep Dark — дизайн-документ', desc: 'Архитектура систем, core loop, прогрессия и экономика.', thumb: 'assets/portisland.png', url: null },
-  { id: 'p1-doc-2', projectId: 'indie-vertical-slice', type: 'docs', title: 'Deep Dark — карта player journey', desc: 'Путь игрока от FTUE до поздних этапов с точками риска и оттока.', url: null },
-  { id: 'p1-doc-3', projectId: 'indie-vertical-slice', type: 'docs', title: 'Deep Dark — система процедурной генерации', desc: 'Правила стыковки чанков, POI и параметров генерации.', url: null },
-
-  // Sheets
-  { id: 'p1-sheet-1', projectId: 'indie-vertical-slice', type: 'sheets', title: 'Баланс ресурсов', desc: 'Типы ресурсов, цепочки открытия и ограничения прогрессии.', thumb: 'assets/portbal.png', url: null },
-  { id: 'p1-sheet-2', projectId: 'indie-vertical-slice', type: 'sheets', title: 'Симуляция экономики', desc: 'Источники, стоки и формулы баланса.', url: null },
+  { id: 'p1-doc-1', projectId: 'indie-vertical-slice', type: 'docs', title: 'Deep Dark — дизайн-документ', desc: 'Архитектура систем, core loop, прогрессия и экономика.', thumb: 'assets/portdd2.jpg', url: 'https://docs.google.com/document/d/1tuYnYBgn_0XKn6XKPoIbXnb5qh1lCGiyNpYdBebd8yA/edit?usp=sharing' },
 
   // Videos
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Геймплей вертикального среза', desc: 'Запись игрового процесса.', thumb: 'assets/portisland1.png', url: null },
-
-  // Prototypes
-  { id: 'p1-proto-1', projectId: 'indie-vertical-slice', type: 'prototypes', title: 'Демо-сборка', desc: 'Играбельная демо-версия проекта.', thumb: 'assets/portislvld.png', url: null },
-
+  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Video Mockup / Геймплейный мудборд', desc: 'Питчинг идеи: Быстрая демонстрация ключевых фич и атмосферы без затрат на полноценную разработку прототипа..', thumb: 'assets/portdd1.png', url: 'https://youtu.be/Uujr8dVtgCE' },
+  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Питч устройства игрового мира', desc: 'Питчинг идеи: Устройство уровней, ограничения, процедурная генерация и пр.', thumb: 'assets/portisland1.png', url: 'https://youtu.be/qizTr06SGXA' },
+  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Procedural Cave Level Design (local)', desc: 'Одна пещера. Тестирование процедурной генерации (dungen, scatter layers) в движке Unity.', url: 'https://youtu.be/n6Lz13CWtmg' },
+  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Procedural Cave Level Design (global)', desc: 'Группа пещер. Тестирование процедурной генерации (dungen, scatter layers) в движке Unity.', url: 'https://youtu.be/-W12R0rqnQM' },
+  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Interior Concept Blocking ', desc: 'Концепт интерьера холла со станциями крафта', url: 'https://youtu.be/2TiMkLFrvSA' },
+  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Worm Combat Prototyping ', desc: 'Прототип сражения с противником', url: 'https://youtu.be/em_6Gm1TQWw' },
+  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: '3PV spawning animation test ', desc: 'Тестирование анимации возрождения от третьего лица', url: 'https://youtu.be/KiczLO-jhNQ' },
+   { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'FPV spawning animation test ', desc: 'Тестирование анимации возрождения от первого лица', url: 'https://youtu.be/izihVmvvrdY' },
   // Other
   { id: 'p1-other-1', projectId: 'indie-vertical-slice', type: 'other', title: 'Референсы и визуальная подготовка', desc: 'Материалы по визуальному направлению и подготовке окружения.', thumb: 'assets/portislvld2.jpg', url: null },
 
@@ -224,15 +217,28 @@ assets: [
   { id: 'p3-img-2', projectId: 'mmo-systems', type: 'images', title: 'Дерево диалогов', desc: 'Ветвления и флаги.', thumb: 'assets/portdd1.png', url: 'assets/portdd1.png' },
   { id: 'p3-img-3', projectId: 'mmo-systems', type: 'images', title: 'Квестовые цепочки', desc: 'Условия и последствия.', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
   { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Нарративная схема', desc: 'Арки, ветки, возвраты.', thumb: 'assets/portnar.png', url: 'assets/portnar.png' },
+
 
   // Docs
-  { id: 'p3-doc-1', projectId: 'mmo-systems', type: 'docs', title: 'Маркетинговая игра / автобаттлер', desc: 'Документ по игровому прототипу для внешней презентационной задачи.', thumb: 'assets/portdd1.png', url: null },
-  { id: 'p3-doc-2', projectId: 'mmo-systems', type: 'docs', title: 'Аудит FTUE', desc: 'Разбор раннего пользовательского опыта с рекомендациями по снижению оттока.', url: null },
-  { id: 'p3-doc-3', projectId: 'mmo-systems', type: 'docs', title: 'F2P-мета-слой и экономика', desc: 'Документ по источникам, стокам и долгосрочной прогрессии.', url: null },
-  { id: 'p3-doc-4', projectId: 'mmo-systems', type: 'docs', title: 'Vision video / mood video', desc: 'Подготовка видео для теста атмосферы, темпа и общего ощущения проекта.', url: null },
+  { id: 'p3-doc-2', projectId: 'mmo-systems', type: 'docs', title: 'Маркетинговая игра / автобаттлер', desc: 'Документ по игровому прототипу для внешней презентационной задачи.', thumb: 'assets/portdd1.png', url: 'https://docs.google.com/document/d/1dYlUL_3MdEi0DdIy9tmsDItKH-pLdLVMMMSFcSClCHU/edit?usp=sharing' },
+  { id: 'p3-doc-3', projectId: 'mmo-systems', type: 'docs', title: 'Аудит проекта', desc: 'Разбор раннего пользовательского опыта с рекомендациями по снижению оттока.', url: 'https://docs.google.com/document/d/14r-Gfi4MADMNFCGST2NVYu9pUiRCRhmV2iDbxWTHOGw/edit?usp=sharing' },
+  { id: 'p3-doc-4', projectId: 'mmo-systems', type: 'docs', title: 'ТЗ - серверная система матчмейкинга', desc: 'Документ проектирования серверной игровой системы, отвечающей за подбор, распределение и телепортацию игроков в разломы с учётом веса игрока, веса инстансов, pity-логики, антиабуза, кластерной архитектуры, интеграций с плагинами и телеметрии.', url: 'https://docs.google.com/document/d/1yitAQe5DrLvsaGn0NdETyFhLwL6n7WP28c1eLlYugzU/edit?usp=sharing' },
+  { id: 'p3-doc-5', projectId: 'mmo-systems', type: 'docs', title: 'Vision video / mood video', desc: 'Подготовка видео для теста атмосферы, темпа и общего ощущения проекта.', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing'},
+
 
   // Sheets
-  { id: 'p3-sheet-1', projectId: 'mmo-systems', type: 'sheets', title: 'Баланс и экономика', desc: 'Таблицы по прогрессии, ресурсам и темпу развития для небольших проектных задач.', thumb: 'assets/portbal.png', url: null },
+  { id: 'p3-sheet-1', projectId: 'mmo-systems', type: 'sheets', title: 'Mobile RPG - Narrative Event Matrix', desc: 'Структурированная база данных энкаунтеров (событий), учитывающая параметры персонажа (возраст, пол, статус) и предлагающая ветвление на основе проверок характеристик (Charisma, Intellegence, Will и др.).', thumb: 'assets/portnar.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing'},
 
   // Videos
   { id: 'p3-vid-1', projectId: 'mmo-systems', type: 'videos', title: 'Препродакшн-видео', desc: 'Сборка слайдов, гифок, музыки и таймлайна для теста атмосферы будущего проекта.', thumb: 'assets/portnar.png', url: null },

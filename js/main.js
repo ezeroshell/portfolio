@@ -71,8 +71,8 @@
     if (!textEl) return;
 
     const ROLES = ['Ведущий', 'Системный', 'Level', 'Нарративный'];
-    const EASTER_EGG    = 'Охуенный';
-    const EASTER_REACT  = '..ошибка..';
+    const EASTER_EGG    = 'Охуе...';
+    const EASTER_REACT  = 'показалось..';
 
     let idx  = 0;
     let busy = false;
@@ -87,7 +87,7 @@
               glitchTo(textEl, ROLES[0], 28, () => { busy = false; });
             }, 80);
           });
-        }, 900);
+        }, 80);
       });
       if (window.XP) XP.add(20, btn, 'easter-egg');
     }
