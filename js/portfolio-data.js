@@ -167,14 +167,14 @@ assets: [
   { id: 'p2-img-4', projectId: 'various-cases', type: 'images', title: 'Итоговый результат сбора в движке (Unity)', desc: 'Созданы меши, шейдер, размещены точки появления ресурсов, противников, harvestables, POI и т.д. Далее проводится тестирование и корректировка баланса и левел-дизайна на основе результатов.', thumb: 'assets/portislvld3.jpg', url: 'assets/portislvld3.jpg' },
 
   // Docs
-  { id: 'p2-doc-1', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — дизайн-документ MVP', desc: 'Полный GDD проекта: core loop, прогрессия, экономика, монетизация и аналитика.', thumb: 'assets/portdd1.png', url: 'https://docs.google.com/document/d/17FeHS-Vmx8KzNHYJenV9im53vE5A-2xo47xj1o6c7Ew/edit?usp=sharing' },
+  { id: 'p2-doc-1', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — дизайн-документ MVP', desc: 'Полный GDD проекта: core loop, прогрессия, экономика, монетизация и аналитика.', thumb: 'assets/mvp.png', url: 'https://docs.google.com/document/d/17FeHS-Vmx8KzNHYJenV9im53vE5A-2xo47xj1o6c7Ew/edit?usp=sharing' },
   { id: 'p2-doc-2', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — правила левел-дизайна островов', desc: 'Документ-стандарт для левел-дизайнеров: POI, маршруты, AFK-споты, ресурсные зоны, боссы.', url: 'https://docs.google.com/document/d/1EhAz3-Gslq1Ipmi5YKLjObwh5LqvhwI-ISk8iMVBW4s/edit?usp=sharing' },
   { id: 'p2-doc-3', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — фича-документ: смерть и сохранение лута', desc: 'Подробная проработка одной из ключевых систем проекта.', url: 'https://docs.google.com/document/d/1UHDVMSXguT9kDLIjkPAltG4CwCCo6_wRp5u-aH779g8/edit?usp=sharing' },
 
   // Sheets
   { id: 'p2-sheet-1', projectId: 'various-cases', type: 'sheets', title: 'Island Survivor — таблица макро-баланса', desc: 'Темп прогрессии, давление на рюкзаки, ресурсный дефицит, поток премиальной валюты и ощущение оружия.', thumb: 'assets/portbal.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing' },
 
-  { id: 'p3-proto-1', projectId: 'various-cases', type: 'prototypes', title: 'Island Survivor Prototype Alpha', desc: 'Быстрый прототип для тестирования.', thumb: 'assets/portdd2.jpg', url: 'https://island-survivor-game-development-2.vercel.app' },
+  { id: 'p3-proto-1', projectId: 'various-cases', type: 'prototypes', title: 'Island Survivor Prototype Alpha', desc: 'Быстрый прототип для тестирования.', thumb: 'assets/prototype.png', url: 'https://island-survivor-game-development-2.vercel.app' },
 
   // ═══════════════════════════════════════════
   // indie-vertical-slice / Deep Dark
