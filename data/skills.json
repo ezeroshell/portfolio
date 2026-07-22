@@ -1,0 +1,88 @@
+{
+  "tags": [
+    {
+      "id": "system-design",
+      "label": "Системный гейм-дизайн",
+      "category": "design",
+      "description": "Проектирование архитектуры игрового процесса: от core loop до мета-прогрессии. Создание системных документов, связывающих механики, экономику и мотивацию в единый механизм. Опыт на MMO и инди-проектах."
+    },
+    {
+      "id": "player-journey",
+      "label": "Player Journey",
+      "category": "design",
+      "description": "Детальная проработка пути игрока от FTUE до эндгейма: контроль темпа игры, точки сложности, churn points."
+    },
+    {
+      "id": "ftue",
+      "label": "FTUE",
+      "category": "design",
+      "description": "Аудит и переработка обучающих петель для минимизации раннего оттока."
+    },
+    {
+      "id": "monetization",
+      "label": "Монетизация / F2P",
+      "category": "design",
+      "description": "Адаптация систем монетизации под LiveOps-модели азиатского рынка."
+    },
+    {
+      "id": "core-loop",
+      "label": "Core Loop / Meta",
+      "category": "design",
+      "description": "Проектирование core loop от концепции до играбельного билда."
+    },
+    {
+      "id": "economy",
+      "label": "Экономика и баланс",
+      "category": "design",
+      "description": "Математическое моделирование экономик: аукционы, стоки/синки, управление инфляцией."
+    },
+    {
+      "id": "ux",
+      "label": "UX",
+      "category": "design",
+      "description": "Переработка интерфейсов на основе метрик удержания."
+    },
+    {
+      "id": "unity-godot",
+      "label": "Unity / Godot",
+      "category": "tools",
+      "description": "Уверенная работа в Unity/Godot: сборка сцен, Level Blockout, ProBuilder."
+    },
+    {
+      "id": "figma-miro",
+      "label": "Figma / Miro",
+      "category": "tools",
+      "description": "Figma — wireframes, UI-макеты. Miro — системные диаграммы, flow charts."
+    },
+    {
+      "id": "3d",
+      "label": "3D / Cascadeur",
+      "category": "tech",
+      "description": "Blender для прототипов, Cascadeur для анимаций."
+    },
+    {
+      "id": "ai-tools",
+      "label": "AI Tools",
+      "category": "tools",
+      "description": "Вайбкодинг, автоматизация, GPT/Claude для документации, Cursor для code prototyping."
+    },
+    {
+      "id": "documentation",
+      "label": "Документация",
+      "category": "soft",
+      "description": "Полный цикл: GDD, TDD, дерево сущностей, дизайн-спецификации."
+    },
+    {
+      "id": "mentoring",
+      "label": "Наставничество",
+      "category": "soft",
+      "description": "Серьёзный опыт наставничества. Геймификация образования."
+    },
+    {
+      "id": "pm",
+      "label": "Project Management",
+      "category": "soft",
+      "description": "Управление задачами, планирование, estimation, координация."
+    }
+  ]
+}

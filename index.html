@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ezeroshell - Senior Game Designer / System Design & Player Journey</title>
+  <meta name="description" content="Портфолио senior game designer: системный дизайн, player journey, экономика, баланс, FTUE, монетизация. 13+ лет в геймдеве. MMO, F2P, инди.">
+  <meta name="author" content="ezeroshell">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="ezeroshell - Senior Game Designer / System Design & Player Journey">
+  <meta property="og:description" content="Системный дизайн, player journey, экономика, баланс. 13+ лет в геймдеве.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ezeroshell.com">
+  <meta property="og:image" content="https://ezeroshell.com/assets/og-image.png">
+  <meta property="og:locale" content="ru_RU">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ezeroshell - Senior Game Designer">
+  <meta name="twitter:description" content="System design & player journey. 13+ лет в геймдеве.">
+  <meta name="twitter:image" content="https://ezeroshell.com/assets/og-image.png">
+
+  <link rel="canonical" href="https://ezeroshell.com">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "ezeroshell",
+    "jobTitle": "Senior Game Designer",
+    "url": "https://ezeroshell.com",
+    "description": "Senior Game Designer с 13+ летним опытом: system design, player journey, экономика, баланс.",
+    "sameAs": ["https://t.me/ezeroshell","https://dtf.ru/id1169883"],
+    "knowsAbout": ["Game Design","System Design","Game Economy","Player Journey","FTUE","Monetization","Game Balance"]
+  }
+  </script>
+</head>
+<body>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══════ HEADER ══════ -->
+  <header class="header" id="header" role="banner">
+    <div class="header-inner">
+      <div class="header-brand">
+        <button class="header-name" id="header-name" type="button" aria-label="Переключить имя">
+          <span class="toggle-text">Игорь Бакчеев</span>
+          <span class="toggle-badge" aria-hidden="true">↔</span>
+        </button>
+        <span class="header-title">system design & player journey · 13+ лет</span>
+      </div>
+      <nav class="header-nav" id="header-nav" aria-label="Навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#experience">Опыт</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#skills">Навыки</a>
+        <a href="#frameworks">Фреймворки</a>
+        <a href="#contact">Связь</a>
+      </nav>
+      <div class="header-contacts">
+        <a href="https://t.me/ezeroshell" class="header-contact-btn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M21 3L9 13"/><path d="M21 3L14 21L9 13L3 11L21 3Z"/></svg>
+          <span>Telegram</span>
+        </a>
+        <a href="mailto:stuffstorm@gmail.com" class="header-contact-btn header-contact-btn--accent">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+          <span>Написать</span>
+        </a>
+      </div>
+      <button class="header-burger" id="mobile-toggle" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════ MOBILE MENU ══════ -->
+  <nav class="mobile-menu" id="mobile-menu" hidden>
+    <a href="#about" class="mobile-nav-link">Обо мне</a>
+    <a href="#experience" class="mobile-nav-link">Опыт</a>
+    <a href="#portfolio" class="mobile-nav-link">Портфолио</a>
+    <a href="#skills" class="mobile-nav-link">Навыки</a>
+    <a href="#frameworks" class="mobile-nav-link">Фреймворки</a>
+    <a href="#contact" class="mobile-nav-link">Связь</a>
+    <hr class="mobile-divider">
+    <a href="https://t.me/ezeroshell" class="contact-link" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 3L9 13"/><path d="M21 3L14 21L9 13L3 11L21 3Z"/></svg>
+      Telegram: @ezeroshell
+    </a>
+    <a href="mailto:stuffstorm@gmail.com" class="contact-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+      stuffstorm@gmail.com
+    </a>
+  </nav>
+
+  <main>
+    <!-- ══════ ABOUT ══════ -->
+    <section class="section section--about" id="about">
+      <div class="section-inner">
+        <div class="reveal">
+          <div class="section-label"><span aria-hidden="true">01 //</span> Обо мне</div>
+          <h1 class="section-title">
+            <button class="role-toggle" id="role-toggle" type="button" aria-label="Переключить роль">
+              <span class="toggle-text">Ведущий</span>
+              <span class="toggle-badge" aria-hidden="true">↔</span>
+            </button>
+            геймдизайнер
+          </h1>
+          <p class="about-lead">Фокус - <strong>архитектура систем</strong> и <strong>путь игрока</strong> (Player Journey). Смотрю на игру как на структуру: что игрок чувствует в первые минуты, где теряет мотивацию, ради чего возвращается спустя месяцы.</p>
+        </div>
+
+        <div class="about-grid reveal">
+          <article class="about-card">
+            <div class="about-card-header">
+              <div class="about-card-icon">13+</div>
+              <h3 class="about-card-title">Лет в геймдеве</h3>
+            </div>
+            <p>Из маркетинговой аналитики в геймдизайн (2013). От экономических систем в MMO до целостного Player Journey в инди и F2P.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-card-header">
+              <div class="about-card-icon">PJ</div>
+              <h3 class="about-card-title">Player Journey</h3>
+            </div>
+            <p>FTUE → Onboarding → Mid-game плато → Эндгейм. Проектирую каждый этап: контроль темпа, точки сложности, churn points, мотивация.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-card-header">
+              <div class="about-card-icon">SYS</div>
+              <h3 class="about-card-title">Системный дизайн</h3>
+            </div>
+            <p>Связываю механики, прогрессию, экономику и мотивацию в единый работающий механизм. Перевожу видение в документацию, схемы и таблицы.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-card-header">
+              <div class="about-card-icon">DEV</div>
+              <h3 class="about-card-title">Работа руками</h3>
+            </div>
+            <p>Unity/Godot (Level Blockout, интеграция баланса). Cascadeur для анимаций. AI для автоматизации.
+              <a href="https://dtf.ru/id1169883" target="_blank" rel="noopener">Блог на DTF</a>.</p>
+          </article>
+        </div>
+
+        <div class="skill-tags-hint" aria-hidden="true">Нажмите на навык для подробностей ↓</div>
+        <div class="skill-tags reveal-stagger" id="skill-tags">
+          <button class="skill-tag" data-cat="design" data-skill-id="player-journey" data-desc="Детальная проработка пути игрока от FTUE до эндгейма: контроль темпа, точки сложности, churn points. Проектировал Player Journey для инди-проекта (вертикальный срез) и для F2P-продуктов." type="button">Player Journey</button>
+          <button class="skill-tag" data-cat="design" data-skill-id="system-design" data-desc="Архитектура от core loop до мета-прогрессии. Системные документы, связывающие механики, экономику и мотивацию." type="button">Системный дизайн</button>
+          <button class="skill-tag" data-cat="design" data-skill-id="ftue" data-desc="Аудит и переработка обучающих петель. Хук - первая ценность за 30 секунд. Минимизация раннего оттока." type="button">FTUE</button>
+          <button class="skill-tag" data-cat="design" data-skill-id="monetization" data-desc="LiveOps-модели для азиатского рынка. Офферы в прогрессию. Оптимизация воронки конверсии в первую покупку." type="button">Монетизация / F2P</button>
+          <button class="skill-tag" data-cat="design" data-skill-id="core-loop" data-desc="Проектирование core loop от концепции до играбельного билда. Процедурная генерация, сезонные ротации." type="button">Core Loop / Meta</button>
+          <button class="skill-tag" data-cat="design" data-skill-id="economy" data-desc="Мат. моделирование экономик: P2P аукционы, стоки/синки, инфляция. Открытый рынок в MMORPG с 50K+ активных трейдеров." type="button">Экономика и баланс</button>
+          <button class="skill-tag" data-cat="design" data-skill-id="ux" data-desc="Переработка интерфейсов по метрикам удержания. Снижение когнитивной нагрузки в онбординге." type="button">UX</button>
+          <button class="skill-tag" data-cat="tools" data-skill-id="unity-godot" data-desc="Unity/Godot: сборка сцен, Level Blockout, ProBuilder. Импорт/экспорт данных, интеграция баланса." type="button">Unity / Godot</button>
+          <button class="skill-tag" data-cat="tools" data-skill-id="figma-miro" data-desc="Figma - wireframes, UI-макеты. Miro - системные диаграммы, flow charts, Player Journey maps." type="button">Figma / Miro</button>
+          <button class="skill-tag" data-cat="tech" data-skill-id="3d" data-desc="Blender для прототипов, Cascadeur для анимаций и раскадровок." type="button">3D / Cascadeur</button>
+          <button class="skill-tag" data-cat="tools" data-skill-id="ai-tools" data-desc="Вайбкодинг, автоматизация, Cursor для прототипирования, GPT/Claude для документации." type="button">AI Tools</button>
+          <button class="skill-tag" data-cat="soft" data-skill-id="documentation" data-desc="Полный цикл: GDD, TDD, дерево сущностей, дизайн-спецификации, требования к арт-пайплайну." type="button">Документация</button>
+          <button class="skill-tag" data-cat="soft" data-skill-id="mentoring" data-desc="Серьёзный опыт наставничества. Методические материалы. Геймификация образования." type="button">Наставничество</button>
+          <button class="skill-tag" data-cat="soft" data-skill-id="pm" data-desc="Планирование, estimation, координация с программистами и художниками." type="button">Project Management</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════ EXPERIENCE ══════ -->
+    <section class="section section--experience" id="experience">
+      <div class="section-inner">
+        <div class="paper paper-stack reveal">
+          <div class="section-label section-label--paper"><span aria-hidden="true">02 //</span> Опыт</div>
+          <div class="exp-header">
+            <h2 class="section-title section-title--paper">Профессиональный путь</h2>
+            <div class="exp-total-badge">
+              <span class="exp-total-number">13+</span>
+              <span class="exp-total-label">лет в геймдеве</span>
+            </div>
+          </div>
+
+          <p class="exp-intro">Перешёл в геймдизайн из маркетинговой аналитики в 2013 году. Прошёл путь от проектирования экономических систем до создания целостного Player Journey. Фокус - системы, которые управляют вовлечённостью на каждом этапе пути игрока.</p>
+
+          <div class="exp-timeline" id="exp-timeline">
+
+            <!-- ── Entry 1: Консалтинг ── -->
+            <article class="exp-entry" data-exp-id="exp-1">
+              <button class="exp-entry-toggle" type="button" aria-expanded="true">
+                <div class="exp-entry-head">
+                  <div class="exp-bar-accent" style="--bar-clr: #0d9b7a"></div>
+                  <div class="exp-entry-left">
+                    <div class="exp-period"><time datetime="2025-07">Июль 2025</time> - н.в.</div>
+                    <h3 class="exp-role">Senior Game Designer / System Design Consultant</h3>
+                    <div class="exp-company">Проектная работа (B2B контракты)</div>
+                  </div>
+                  <div class="exp-entry-right">
+                    <span class="exp-duration">1 г 1 мес</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+              </button>
+              <div class="exp-body" aria-hidden="false">
+                <div class="exp-desc">
+                  Консультирование по системам, экономике и Player Journey для Mobile F2P, Web и PC продуктов.
+                  <ul>
+                    <li>Проектирование мета-слоя (Mobile F2P Sandbox): механика владения недвижимостью, расчёт моделей пассивного дохода, баланс источников/стоков</li>
+                    <li>Прототипирование маркетинговых игр (Web): образовательный автобаттлер для продвижения облачных сервисов. GDD и баланс за жёсткие сроки</li>
+                    <li>Нарративное проектирование (Инди): логика ветвящихся диалогов (800+ реплик) и квестовые цепочки с интеграцией в геймплей</li>
+                    <li>Аудит FTUE: переработка обучающих петель для минимизации раннего оттока</li>
+                  </ul>
+                </div>
+                <div class="exp-achievements">
+                  <h4 class="exp-achievements-title">Результаты</h4>
+                  <ul>
+                    <li>Задокументированный мета-слой с полной экономической моделью</li>
+                    <li>Играбельный прототип с web export за 3 недели</li>
+                    <li>Система диалогов с ветвлением и интеграцией в геймплей</li>
+                  </ul>
+                </div>
+                <div class="exp-links">
+                  <button class="exp-link exp-link--modal" type="button" data-open-project="various-cases">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg>
+                    Посмотреть примеры работ
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- ── Entry 2: Vampire Squid ── -->
+            <article class="exp-entry" data-exp-id="exp-2">
+              <button class="exp-entry-toggle" type="button" aria-expanded="true">
+                <div class="exp-entry-head">
+                  <div class="exp-bar-accent" style="--bar-clr: #2196f3"></div>
+                  <div class="exp-entry-left">
+                    <div class="exp-period"><time datetime="2024-05">Май 2024</time> - <time datetime="2025-06">Июнь 2025</time></div>
+                    <h3 class="exp-role">Ведущий геймдизайнер / Системный дизайнер</h3>
+                    <div class="exp-company">Vampire Squid</div>
+                  </div>
+                  <div class="exp-entry-right">
+                    <span class="exp-duration">1 г 2 мес</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+              </button>
+              <div class="exp-body" aria-hidden="false">
+                <div class="exp-desc">
+                  Инди-проект от концепции до вертикального среза.
+                  <ul>
+                    <li>Спроектировал архитектуру игрового процесса: от core loop до сложной мета-прогрессии</li>
+                    <li>Разработал систему процедурной генерации уровней: логика стыковки чанков, алгоритмы POI</li>
+                    <li>Создал системную прогрессию ресурсов: иерархия из 13 типов пород с каскадным гейтингом инструментов</li>
+                    <li>Спроектировал Player Journey: детальная проработка от FTUE до эндгейма с контролем темпа и сложности</li>
+                    <li>Полный цикл документации (GDD): дерево сущностей, дизайн-спецификации, требования к арт-пайплайну</li>
+                  </ul>
+                </div>
+                <div class="exp-achievements">
+                  <h4 class="exp-achievements-title">Результаты</h4>
+                  <ul>
+                    <li></li>
+                    <li>Полный GDD с архитектурой всех игровых систем</li>
+                    <li>Процедурная генерация с параметрическим контролем сложности</li>
+                  </ul>
+                </div>
+                <div class="exp-links">
+                  <button class="exp-link exp-link--modal" type="button" data-open-project="indie-vertical-slice">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 13h4"/></svg>
+                    Посмотреть примеры работ
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- ── Entry 3: Азиатские MMO ── -->
+            <article class="exp-entry" data-exp-id="exp-3">
+              <button class="exp-entry-toggle" type="button" aria-expanded="true">
+                <div class="exp-entry-head">
+                  <div class="exp-bar-accent" style="--bar-clr: #ff9800"></div>
+                  <div class="exp-entry-left">
+                    <div class="exp-period"><time datetime="2018-02">Февраль 2018</time> - <time datetime="2022-03">Март 2022</time></div>
+                    <h3 class="exp-role">Senior System Designer</h3>
+                    <div class="exp-company">MMO-проекты, азиатский рынок (NDA)</div>
+                  </div>
+                  <div class="exp-entry-right">
+                    <span class="exp-duration">4 г 2 мес</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+              </button>
+              <div class="exp-body" aria-hidden="false">
+                <div class="exp-desc">
+                  Работа над рядом оперируемых MMO-проектов для азиатского рынка: адаптация систем под специфику региона и LiveOps-модели.
+                  <ul>
+                    <li>Адаптация и развитие систем монетизации под LiveOps-модели азиатского рынка</li>
+                    <li>Настройка баланса прогрессии и гринда для удержания на late-game этапах</li>
+                    <li>Проектирование сезонных ротаций контента для поддержания вовлечённости</li>
+                    <li>Переработка интерфейсов и процессов онбординга на основе метрик удержания</li>
+                  </ul>
+                </div>
+                <div class="exp-achievements">
+                  <h4 class="exp-achievements-title">Результаты</h4>
+                  <ul>
+                    <li>Рост D7 retention на 12% после переработки раннего Player Journey</li>
+                    <li>Увеличение среднего чека на 18% через интеграцию офферов в прогрессию</li>
+                    <li>Снижение оттока на mid-game плато на 15% за счёт сезонных ротаций</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- ── Entry 4: Crossout (NDA) ── -->
+            <article class="exp-entry" data-exp-id="exp-4">
+              <button class="exp-entry-toggle" type="button" aria-expanded="true">
+                <div class="exp-entry-head">
+                  <div class="exp-bar-accent" style="--bar-clr: #e91e63"></div>
+                  <div class="exp-entry-left">
+                    <div class="exp-period"><time datetime="2015-10">Октябрь 2015</time> - <time datetime="2018-01">Январь 2018</time></div>
+                    <h3 class="exp-role">System Designer / Economy Designer</h3>
+                    <div class="exp-company">Action-MMO, Vehicular Combat (NDA)</div>
+                  </div>
+                  <div class="exp-entry-right">
+                    <span class="exp-duration">2 г 4 мес</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+              </button>
+              <div class="exp-body" aria-hidden="false">
+                <div class="exp-desc">
+                  Ответственность за экономическую систему и монетизацию action-MMO с крафтом и PvP.
+                  <ul>
+                    <li>Проектирование и балансировка рынка аукционного типа (P2P trade) как ключевого элемента мета-игры</li>
+                    <li>Расчёт макроэкономики, управление инфляцией внутриигровых ресурсов</li>
+                    <li>Настройка LiveOps-офферов, интегрированных в прогрессию игрока</li>
+                    <li>Оптимизация монетизационной воронки</li>
+                  </ul>
+                </div>
+                <div class="exp-achievements">
+                  <h4 class="exp-achievements-title">Результаты</h4>
+                  <ul>
+                    <li>Повышение конверсии в первую покупку на 22% за счёт корректировки офферов</li>
+                    <li>Стабильная P2P экономика с управляемой инфляцией при 100K+ DAU</li>
+                    <li>Рост ARPDAU на 15% через интеграцию монетизации в Player Journey</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <!-- ── Entry 5: RoyalQuest (NDA) ── -->
+            <article class="exp-entry" data-exp-id="exp-5">
+              <button class="exp-entry-toggle" type="button" aria-expanded="true">
+                <div class="exp-entry-head">
+                  <div class="exp-bar-accent" style="--bar-clr: #9c27b0"></div>
+                  <div class="exp-entry-left">
+                    <div class="exp-period"><time datetime="2013-01">Январь 2013</time> - <time datetime="2015-09">Сентябрь 2015</time></div>
+                    <h3 class="exp-role">Game Designer / System Designer</h3>
+                    <div class="exp-company">Fantasy MMORPG (NDA)</div>
+                  </div>
+                  <div class="exp-entry-right">
+                    <span class="exp-duration">2 г 9 мес</span>
+                    <svg class="exp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+                  </div>
+                </div>
+              </button>
+              <div class="exp-body" aria-hidden="false">
+                <div class="exp-desc">
+                  Осознанно перешёл в геймдизайн из маркетинговой аналитики под задачу спроектировать открытый рынок между игроками. Вырос до ответственности за пул системных задач.
+                  <ul>
+                    <li>Спроектировал и сбалансировал открытый рынок между игроками на основе мат. моделирования</li>
+                    <li>Расчёт кривых опыта и распределение наград по уровням</li>
+                    <li>Переработал систему туториалов для снижения когнитивной нагрузки</li>
+                    <li>Проектирование социальных механик и балансировка матчмейкинга (PvP-брекеты)</li>
+                  </ul>
+                </div>
+                <div class="exp-achievements">
+                  <h4 class="exp-achievements-title">Результаты</h4>
+                  <ul>
+                    <li>Работающий P2P рынок с самобалансирующейся экономикой (50K+ ежедневных транзакций)</li>
+                    <li>Снижение оттока новых игроков на 20% после переработки туториала</li>
+                    <li>Рост вовлечённости в PvP на 30% после ребаланса матчмейкинга</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="exp-nda-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            Если интересны конкретные кейсы - всегда готов обсудить и показать материалы на интервью.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button class="back-to-exp" id="back-to-exp" type="button" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+      Вернуться к опыту
+    </button>
+
+    <!-- ══════ PORTFOLIO ══════ -->
+    <section class="section section--portfolio" id="portfolio">
+      <div class="portfolio-divider" aria-hidden="true">
+        <div class="portfolio-divider-line"></div>
+        <div class="portfolio-divider-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </div>
+        <div class="portfolio-divider-line"></div>
+      </div>
+
+      <div class="section-inner">
+        <div class="reveal">
+          <div class="portfolio-hero">
+            <div class="section-label"><span aria-hidden="true">03 //</span> Портфолио</div>
+            <h2 class="section-title portfolio-title">Кейсы и примеры работ</h2>
+            <p class="section-subtitle portfolio-subtitle">
+              Каждый кейс - конкретные задачи, решения и результат. От документации и таблиц баланса до играбельных прототипов.
+            </p>
+          </div>
+          <div class="portfolio-resume-links">
+            <span class="portfolio-resume-label">Резюме:</span>
+            <a href="#contact" class="portfolio-resume-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              Вопросы?
+            </a>
+          </div>
+        </div>
+
+        <div class="portfolio-explorer reveal" id="portfolio-explorer">
+          <div class="portfolio-toolbar">
+            <div class="portfolio-mode-switch" role="tablist">
+              <button class="portfolio-mode-btn active" type="button" data-view="projects" role="tab" aria-selected="true">По кейсам</button>
+              <button class="portfolio-mode-btn" type="button" data-view="types" role="tab" aria-selected="false">По типам работ</button>
+            </div>
+          </div>
+          <div class="portfolio-grid" id="portfolio-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal-overlay" id="portfolio-modal" aria-modal="true" role="dialog" hidden>
+      <div class="portfolio-modal">
+        <div class="portfolio-modal-topbar">
+          <div class="pmod-topbar-center"><span class="pmod-counter" id="modal-counter"></span></div>
+          <button class="pmod-close" id="modal-close" type="button" aria-label="Закрыть">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M18 6L6 18M6 6l12 12"/></svg>
+          </button>
+        </div>
+        <div class="portfolio-modal-page" id="portfolio-modal-page">
+          <div class="pmod-header" id="pmod-header"></div>
+          <div class="pmod-tabs" id="pmod-tabs" role="tablist"></div>
+          <div class="pmod-content" id="pmod-content"></div>
+          <div class="pmod-details" id="pmod-details"></div>
+          <div class="pmod-project-link" id="pmod-project-link"></div>
+        </div>
+        <button class="pmod-side-nav pmod-side-prev" id="modal-prev" type="button" aria-label="Предыдущий"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="pmod-side-nav pmod-side-next" id="modal-next" type="button" aria-label="Следующий"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery-overlay" id="gallery" aria-modal="true" role="dialog" hidden>
+      <div class="gallery-chrome">
+        <button class="gallery-btn gallery-close-btn" id="gallery-close" type="button" aria-label="Закрыть"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+        <div class="gallery-counter" id="gallery-counter"></div>
+      </div>
+      <button class="gallery-btn gallery-arrow gallery-arrow-prev" id="gallery-prev" type="button" aria-label="Назад"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="gallery-btn gallery-arrow gallery-arrow-next" id="gallery-next" type="button" aria-label="Вперёд"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="28" height="28"><path d="M9 18l6-6-6-6"/></svg></button>
+      <div class="gallery-stage" id="gallery-stage"></div>
+      <div class="gallery-caption" id="gallery-caption"></div>
+    </div>
+
+    <!-- ══════ SKILLS ══════ -->
+    <section class="section section--skills" id="skills">
+      <div class="section-inner">
+        <div class="reveal">
+          <div class="section-label"><span aria-hidden="true">04 //</span> Навыки</div>
+          <h2 class="section-title">Карта компетенций</h2>
+        </div>
+        <div class="skills-grid reveal">
+          <div class="skill-cluster"><h3 class="skill-cluster-title">Проектирование</h3><div class="skill-nodes">
+            <button class="skill-node" data-skill-id="sk-pj" type="button" data-desc="Детальная проработка пути игрока: FTUE → Onboarding → Early/Mid/Late/End Game. Контроль темпа, churn points, мотивация на каждом этапе."><span class="skill-node-icon">PJ</span><span class="skill-node-label">Player Journey</span></button>
+            <button class="skill-node" data-skill-id="sk-core-loop" type="button" data-desc="Архитектура от core loop до мета-прогрессии. Процедурная генерация, каскадный гейтинг."><span class="skill-node-icon">CL</span><span class="skill-node-label">Core Loop Design</span></button>
+            <button class="skill-node" data-skill-id="sk-economy" type="button" data-desc="P2P рынок в MMORPG (50K+ транзакций/день). Макроэкономика, инфляция. Модели дохода для F2P."><span class="skill-node-icon">EC</span><span class="skill-node-label">Экономический дизайн</span></button>
+            <button class="skill-node" data-skill-id="sk-progression" type="button" data-desc="13 типов пород с каскадным гейтингом. Кривые опыта. Баланс гринда для late-game."><span class="skill-node-icon">PG</span><span class="skill-node-label">Системы прогрессии</span></button>
+            <button class="skill-node" data-skill-id="sk-balance" type="button" data-desc="P2P trade, источники/стоки, офферы. Формулы и симуляции. Стабильная экономика при 100K+ DAU."><span class="skill-node-icon">BL</span><span class="skill-node-label">Баланс</span></button>
+            <button class="skill-node" data-skill-id="sk-ftue" type="button" data-desc="Аудит обучающих петель. Снижение когнитивной нагрузки. Снижение оттока новичков на 20%."><span class="skill-node-icon">FT</span><span class="skill-node-label">FTUE / Onboarding</span></button>
+            <button class="skill-node" data-skill-id="sk-monetization" type="button" data-desc="LiveOps для азиатского рынка. Офферы в прогрессию. +22% конверсии в первую покупку."><span class="skill-node-icon">MN</span><span class="skill-node-label">Монетизация</span></button>
+            <button class="skill-node" data-skill-id="sk-narrative" type="button" data-desc="800+ реплик, ветвящиеся диалоги, квестовые цепочки, раскадровки."><span class="skill-node-icon">NR</span><span class="skill-node-label">Нарративный дизайн</span></button>
+          </div></div>
+          <div class="skill-cluster"><h3 class="skill-cluster-title">Инструменты</h3><div class="skill-nodes">
+            <button class="skill-node" data-skill-id="sk-unity" type="button" data-desc="Сборка сцен, Level Blockout, ProBuilder. Вертикальный срез."><span class="skill-node-icon">UN</span><span class="skill-node-label">Unity</span></button>
+            <button class="skill-node" data-skill-id="sk-godot" type="button" data-desc="Прототипирование, web export, GDScript."><span class="skill-node-icon">GD</span><span class="skill-node-label">Godot</span></button>
+            <button class="skill-node" data-skill-id="sk-figma" type="button" data-desc="Wireframes, UI-макеты, Player Journey maps, ТЗ для художников."><span class="skill-node-icon">FG</span><span class="skill-node-label">Figma</span></button>
+            <button class="skill-node" data-skill-id="sk-miro" type="button" data-desc="Системные диаграммы, flow charts, деревья сущностей."><span class="skill-node-icon">MR</span><span class="skill-node-label">Miro</span></button>
+            <button class="skill-node" data-skill-id="sk-sheets" type="button" data-desc="Баланс-таблицы, симуляции экономики, формулы прогрессии."><span class="skill-node-icon">SH</span><span class="skill-node-label">Sheets / Excel</span></button>
+            <button class="skill-node" data-skill-id="sk-ai" type="button" data-desc="Вайбкодинг, автоматизация, Cursor для прототипирования."><span class="skill-node-icon">AI</span><span class="skill-node-label">AI-инструменты</span></button>
+            <button class="skill-node" data-skill-id="sk-ps" type="button" data-desc="Photoshop, Illustrator для визуалов и ТЗ."><span class="skill-node-icon">PS</span><span class="skill-node-label">Photoshop / Illustrator</span></button>
+            <button class="skill-node" data-skill-id="sk-fmod" type="button" data-desc="FMOD, пайплайн аудио."><span class="skill-node-icon">FM</span><span class="skill-node-label">FMOD</span></button>
+          </div></div>
+          <div class="skill-cluster"><h3 class="skill-cluster-title">Коммуникации</h3><div class="skill-nodes">
+            <button class="skill-node" data-skill-id="sk-mentor" type="button" data-desc="Наставничество, методические материалы, геймификация образования."><span class="skill-node-icon">MT</span><span class="skill-node-label">Менторство</span></button>
+            <button class="skill-node" data-skill-id="sk-pres" type="button" data-desc="Перевод видения в документацию, схемы и таблицы для команды."><span class="skill-node-icon">PR</span><span class="skill-node-label">Презентации</span></button>
+            <button class="skill-node" data-skill-id="sk-docs" type="button" data-desc="GDD, TDD, дерево сущностей, дизайн-спецификации, арт-пайплайн."><span class="skill-node-icon">DC</span><span class="skill-node-label">Документация</span></button>
+            <button class="skill-node" data-skill-id="sk-team" type="button" data-desc="Связка с арт-директором и программистами. ТЗ на языке исполнителей."><span class="skill-node-icon">TM</span><span class="skill-node-label">Командная работа</span></button>
+          </div></div>
+          <div class="skill-cluster"><h3 class="skill-cluster-title">Технические</h3><div class="skill-nodes">
+            <button class="skill-node" data-skill-id="sk-analytics" type="button" data-desc="Бэкграунд из маркетинговой аналитики. Retention, churn points, конверсионные воронки."><span class="skill-node-icon">AN</span><span class="skill-node-label">Аналитика</span></button>
+            <button class="skill-node" data-skill-id="sk-scripts" type="button" data-desc="Вспомогательные скрипты, автоматизация данных в таблицах."><span class="skill-node-icon">CD</span><span class="skill-node-label">Скрипты / Автоматизация</span></button>
+            <button class="skill-node" data-skill-id="sk-3d" type="button" data-desc="Blender 3D, Cascadeur для анимаций и раскадровок."><span class="skill-node-icon">3D</span><span class="skill-node-label">3D / Анимация</span></button>
+            <button class="skill-node" data-skill-id="sk-procgen" type="button" data-desc="Стыковка чанков, распределение POI, параметрический контроль."><span class="skill-node-icon">PG</span><span class="skill-node-label">Процедурная генерация</span></button>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════ FRAMEWORKS ══════ -->
+    <section class="section section--frameworks" id="frameworks">
+      <div class="section-inner">
+        <div class="reveal">
+          <div class="section-label"><span aria-hidden="true">05 //</span> Фреймворки</div>
+          <h2 class="section-title">Как я проектирую Player Journey</h2>
+        </div>
+        <div class="framework-block reveal">
+          <div class="framework-header"><div class="framework-icon">PJ</div><h3 class="framework-title">Player Journey</h3><p class="framework-subtitle">Каждый этап - конкретные задачи дизайнера: что игрок делает, чувствует, и почему остаётся</p></div>
+          <div class="framework-stages">
+            <div class="framework-stage"><div class="framework-stage-num">01</div><h4 class="framework-stage-name">FTUE</h4><p class="framework-stage-desc">Хук за 30 сек. Первая ценность. Минимизация оттока.</p></div>
+            <div class="framework-stage"><div class="framework-stage-num">02</div><h4 class="framework-stage-name">Onboarding</h4><p class="framework-stage-desc">Обучение core loop. Контроль когнитивной нагрузки.</p></div>
+            <div class="framework-stage"><div class="framework-stage-num">03</div><h4 class="framework-stage-name">Early Game</h4><p class="framework-stage-desc">Раскрытие систем. Формирование привычки.</p></div>
+            <div class="framework-stage"><div class="framework-stage-num">04</div><h4 class="framework-stage-name">Mid Game</h4><p class="framework-stage-desc">Борьба с плато. Расширение целей.</p></div>
+            <div class="framework-stage"><div class="framework-stage-num">05</div><h4 class="framework-stage-name">Late Game</h4><p class="framework-stage-desc">Социальные механики. Мастерство.</p></div>
+            <div class="framework-stage"><div class="framework-stage-num">06</div><h4 class="framework-stage-name">End Game</h4><p class="framework-stage-desc">GaaS, реиграбельность, LiveOps.</p></div>
+          </div>
+        </div>
+        <div class="frameworks-grid reveal">
+          <div class="framework-card"><div class="framework-card-header"><div class="framework-icon small">CL</div><h3 class="framework-card-title">Core Loop</h3></div><div class="framework-card-content"><div class="framework-loop"><span class="loop-item">Действие</span><span class="loop-arrow">→</span><span class="loop-item">Награда</span><span class="loop-arrow">→</span><span class="loop-item">Прогресс</span><span class="loop-arrow">→</span><span class="loop-item">Мотивация</span><span class="loop-arrow loop-back">↺</span></div><p class="framework-card-desc">Замкнутый цикл удержания на каждом этапе Player Journey.</p></div></div>
+          <div class="framework-card"><div class="framework-card-header"><div class="framework-icon small">MT</div><h3 class="framework-card-title">Meta Progression</h3></div><div class="framework-card-content"><div class="framework-meta-layers"><div class="meta-layer"><span class="meta-dot"></span> Session Goals</div><div class="meta-layer"><span class="meta-dot"></span> Daily/Weekly</div><div class="meta-layer"><span class="meta-dot"></span> Season Progress</div><div class="meta-layer"><span class="meta-dot"></span> Long-term Mastery</div></div><p class="framework-card-desc">Вложенные слои целей от минутных до многомесячных.</p></div></div>
+          <div class="framework-card"><div class="framework-card-header"><div class="framework-icon small">EC</div><h3 class="framework-card-title">Economy Design</h3></div><div class="framework-card-content"><div class="econ-flow"><span class="econ-source">Sources</span><span class="econ-arrow">→</span><span class="econ-pool">Pool</span><span class="econ-arrow">→</span><span class="econ-sink">Sinks</span></div><p class="framework-card-desc">Баланс источников и стоков. Контроль инфляции, точки конверсии.</p></div></div>
+          <div class="framework-card"><div class="framework-card-header"><div class="framework-icon small">BL</div><h3 class="framework-card-title">Balance</h3></div><div class="framework-card-content"><div class="framework-balance"><div class="balance-item">Кривые сложности</div><div class="balance-item">Темп наград</div><div class="balance-item">Гейтинг контента</div><div class="balance-item">Risk/Reward</div></div><p class="framework-card-desc">Мат. моделирование, симуляции, итеративная настройка.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════ CONTACT ══════ -->
+    <section class="section section--contact" id="contact">
+      <div class="section-inner">
+        <div class="reveal">
+          <div class="section-label section-label--blue"><span aria-hidden="true">06 //</span> Связь</div>
+          <h2 class="section-title">Пишите!</h2>
+        </div>
+        <div class="contact-grid reveal">
+          <div class="contact-info">
+            <p>Ищу проект, где ценится системный подход к Player Journey. Предпочитаю PC-платформы, комплексные системы и команды, которые понимают ценность дизайнера на ранних этапах.</p>
+            <p><strong>Формат:</strong> удалённо. Постоянная работа или подработка.</p>
+            <p>Готов показать и обсудить материалы из свежих кейсов на интервью. Всегда рад фидбеку и новым знакомствам!</p>
+          </div>
+          <div class="contact-links-grid">
+            <a href="https://t.me/ezeroshell" class="contact-card" target="_blank" rel="noopener"><div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 3L9 13"/><path d="M21 3L14 21L9 13L3 11L21 3Z"/></svg></div><div class="contact-card-label">Telegram</div><div class="contact-card-value">@ezeroshell</div></a>
+            <a href="zeroshell" class="contact-card"><div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="9" cy="12" r="1"/><circle cx="15" cy="12" r="1"/><path d="M7.5 7.5c3.5-2 6.5-2 9 0"/><path d="M7 17c2 1 4.5 1.5 5 1.5s3-0.5 5-1.5"/></svg></div><div class="contact-card-label">Discord</div><div class="contact-card-value">ezeroshell</div></a>
+            <a href="mailto:stuffstorm@gmail.com" class="contact-card"><div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg></div><div class="contact-card-label">Email</div><div class="contact-card-value">stuffstorm@gmail.com</div></a>
+            <a href="https://dtf.ru/id1169883" class="contact-card" target="_blank" rel="noopener"><div class="contact-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div><div class="contact-card-label">Блог</div><div class="contact-card-value">DTF</div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><p class="footer-copy">ezeroshell · 2025</p></footer>
+
+  <div class="xp-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="xp-label" id="xp-label">XP</span><div class="xp-track"><div class="xp-fill" id="xp-fill"></div></div><span class="xp-level" id="xp-level">LVL 1</span></div>
+  <div class="level-notification" id="level-notification" role="alert" aria-live="assertive"></div>
+  <div class="skill-popup" id="skill-popup" role="tooltip" aria-hidden="true"><button class="skill-popup-close" id="skill-popup-close" type="button">&times;</button><div class="skill-popup-title" id="skill-popup-title"></div><div class="skill-popup-desc" id="skill-popup-desc"></div></div>
+
+  <script src="js/xp-system.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/particles.js" defer></script>
+  <script src="js/skills.js" defer></script>
+  <script src="js/portfolio-data.js" defer></script>
+  <script src="js/portfolio.js" defer></script>
+</body>
+</html>
