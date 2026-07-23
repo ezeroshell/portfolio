@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Резюме PDF — Игорь Бакчеев</title>
+  <meta name="description" content="PDF-версия резюме Игоря Бакчеева, Senior Game Designer.">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .resume-page {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .resume-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .resume-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: inherit;
+    }
+
+    .resume-viewer {
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .resume-viewer object {
+      display: block;
+      width: 100%;
+      height: 85vh;
+    }
+
+    @media (max-width: 900px) {
+      .resume-viewer {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume-page">
+    <h1>Резюме PDF</h1>
+
+    <div class="resume-actions">
+      <a href="assets/cv_igor_bakcheev_ru.pdf" class="resume-btn" target="_blank" rel="noopener">
+        Открыть в новой вкладке
+      </a>
+      <a href="assets/cv_igor_bakcheev_ru.pdf" class="resume-btn" download>
+        Скачать PDF
+      </a>
+      <a href="index.html" class="resume-btn">
+        Вернуться на сайт
+      </a>
+    </div>
+
+    <div class="resume-viewer">
+      <object
+        data="assets/cv_igor_bakcheev_ru.pdf#view=FitH"
+        type="application/pdf"
+      >
+        <p>
+          Браузер не поддерживает встроенный просмотр PDF.
+          <a href="assets/cv_igor_bakcheev_ru.pdf" target="_blank" rel="noopener">
+            Открыть PDF отдельно
+          </a>
+        </p>
+      </object>
+    </div>
+  </main>
+</body>
+</html>
