@@ -154,78 +154,78 @@ const PORTFOLIO_DATA = {
     }
   ],
 
-assets: [
+  assets: [
 
-  // Images
-  { id: 'p2-img-1', projectId: 'various-cases', type: 'images', title: 'Скриншот Геймплея', desc: 'Игрок находится на "базе", выдан квест на улучшение оружия, справа виден ограниченный по времени оффер', thumb: 'assets/portisland1.png', url: 'assets/portisland1.png' },
-  { id: 'p2-img-2', projectId: 'various-cases', type: 'images', title: 'Правила левел-дизайна островов', desc: 'Фрагмент документа для левел-дизайнеров.', thumb: 'assets/portislvld1.png', url: 'assets/portislvld1.png' },
-  { id: 'p2-img-3', projectId: 'various-cases', type: 'images', title: 'Схема левел-дизайна переданная в продакшн', desc: 'Размечены POI с применяемыми в движке обозначениями.', thumb: 'assets/portislvld.png', url: 'assets/portislvld.png' },
-  { id: 'p2-img-4', projectId: 'various-cases', type: 'images', title: 'Итоговый результат сбора в движке (Unity)', desc: 'Созданы меши, шейдер, размещены точки появления ресурсов, противников, harvestables, POI и т.д. Далее проводится тестирование и корректировка баланса и левел-дизайна на основе результатов.', thumb: 'assets/portislvld3.jpg', url: 'assets/portislvld3.jpg' },
+    // ===== various-cases: Images =====
+    { id: 'vc-img-1', projectId: 'various-cases', type: 'images', title: 'Скриншот Геймплея', desc: 'Игрок находится на "базе", выдан квест на улучшение оружия, справа виден ограниченный по времени оффер', thumb: 'assets/portisland1.png', url: 'assets/portisland1.png' },
+    { id: 'vc-img-2', projectId: 'various-cases', type: 'images', title: 'Правила левел-дизайна островов', desc: 'Фрагмент документа для левел-дизайнеров.', thumb: 'assets/portislvld1.png', url: 'assets/portislvld1.png' },
+    { id: 'vc-img-3', projectId: 'various-cases', type: 'images', title: 'Схема левел-дизайна переданная в продакшн', desc: 'Размечены POI с применяемыми в движке обозначениями.', thumb: 'assets/portislvld.png', url: 'assets/portislvld.png' },
+    { id: 'vc-img-4', projectId: 'various-cases', type: 'images', title: 'Итоговый результат сбора в движке (Unity)', desc: 'Созданы меши, шейдер, размещены точки появления ресурсов, противников, harvestables, POI и т.д. Далее проводится тестирование и корректировка баланса и левел-дизайна на основе результатов.', thumb: 'assets/portislvld3.jpg', url: 'assets/portislvld3.jpg' },
 
-  // Docs
-  { id: 'p2-doc-1', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — дизайн-документ MVP', desc: 'Полный GDD проекта: core loop, прогрессия, экономика, монетизация и аналитика.', thumb: 'assets/mvp.png', url: 'https://docs.google.com/document/d/17FeHS-Vmx8KzNHYJenV9im53vE5A-2xo47xj1o6c7Ew/edit?usp=sharing' },
-  { id: 'p2-doc-2', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — правила левел-дизайна островов', desc: 'Документ-стандарт для левел-дизайнеров: POI, маршруты, AFK-споты, ресурсные зоны, боссы.', url: 'https://docs.google.com/document/d/1EhAz3-Gslq1Ipmi5YKLjObwh5LqvhwI-ISk8iMVBW4s/edit?usp=sharing' },
-  { id: 'p2-doc-3', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — фича-документ: смерть и сохранение лута', desc: 'Подробная проработка одной из ключевых систем проекта.', url: 'https://docs.google.com/document/d/1UHDVMSXguT9kDLIjkPAltG4CwCCo6_wRp5u-aH779g8/edit?usp=sharing' },
+    // ===== various-cases: Docs =====
+    { id: 'vc-doc-1', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — дизайн-документ MVP', desc: 'Полный GDD проекта: core loop, прогрессия, экономика, монетизация и аналитика.', thumb: 'assets/mvp.png', url: 'https://docs.google.com/document/d/17FeHS-Vmx8KzNHYJenV9im53vE5A-2xo47xj1o6c7Ew/edit?usp=sharing' },
+    { id: 'vc-doc-2', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — правила левел-дизайна островов', desc: 'Документ-стандарт для левел-дизайнеров: POI, маршруты, AFK-споты, ресурсные зоны, боссы.', url: 'https://docs.google.com/document/d/1EhAz3-Gslq1Ipmi5YKLjObwh5LqvhwI-ISk8iMVBW4s/edit?usp=sharing' },
+    { id: 'vc-doc-3', projectId: 'various-cases', type: 'docs', title: 'Island Survivor — фича-документ: смерть и сохранение лута', desc: 'Подробная проработка одной из ключевых систем проекта.', url: 'https://docs.google.com/document/d/1UHDVMSXguT9kDLIjkPAltG4CwCCo6_wRp5u-aH779g8/edit?usp=sharing' },
 
-  // Sheets
-  { id: 'p2-sheet-1', projectId: 'various-cases', type: 'sheets', title: 'Island Survivor — таблица макро-баланса', desc: 'Темп прогрессии, давление на рюкзаки, ресурсный дефицит, поток премиальной валюты и ощущение оружия.', thumb: 'assets/portbal.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing' },
+    // ===== various-cases: Sheets =====
+    { id: 'vc-sheet-1', projectId: 'various-cases', type: 'sheets', title: 'Island Survivor — таблица макро-баланса', desc: 'Темп прогрессии, давление на рюкзаки, ресурсный дефицит, поток премиальной валюты и ощущение оружия.', thumb: 'assets/portbal.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing' },
 
-  { id: 'p3-proto-1', projectId: 'various-cases', type: 'prototypes', title: 'Island Survivor Prototype Alpha', desc: 'Быстрый прототип для тестирования.', thumb: 'assets/prototype.png', url: 'https://island-survivor-game-development-2.vercel.app' },
+    // ===== various-cases: Prototypes =====
+    { id: 'vc-proto-1', projectId: 'various-cases', type: 'prototypes', title: 'Island Survivor Prototype Alpha', desc: 'Быстрый прототип для тестирования.', thumb: 'assets/prototype.png', url: 'https://island-survivor-game-development-2.vercel.app' },
 
-  // Images
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Deep Dark', desc: 'Первичный визуальный концепт', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Визуал вертикального среза', desc: 'Результат работы команды на момент готовности среза', thumb: 'assets/ddslice.jpg', url: 'assets/ddslice.jpg' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Global Core Loop', desc: 'Глобальная игровая петля', thumb: 'assets/coreloop.png', url: 'assets/coreloop.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Craft Feature Spec', desc: 'Спецификация по системе крафта', thumb: 'assets/craftfeature.png', url: 'assets/craftfeature.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Biomes Feature Spec', desc: 'Спецификация по системе биомов', thumb: 'assets/biomefeature.png', url: 'assets/biomefeature.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Anomalies Event Feature Spec', desc: 'Спецификация по системе процедурных ивентов с аномалиями', thumb: 'assets/anomalies.png', url: 'assets/anomalies.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Коллаж документации по проекту', desc: 'Демонстрация количества документов и описанных фич.', thumb: 'assets/docs.png', url: 'assets/docs.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Drill Control UI blocking', desc: 'Блокинг управления движением бура', thumb: 'assets/drillcontrols.png', url: 'assets/drillcontrols.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Level Design Spec', desc: 'Спецификация по левел-дизайну мира', thumb: 'assets/leveld.jpg', url: 'assets/leveld.jpg' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Enemy AI spec', desc: 'Спецификация интеллекта противника', thumb: 'assets/aispec.png', url: 'assets/aispec.png' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Interior Blocking', desc: 'Блокинг интерьера', thumb: 'assets/interior.jpg', url: 'assets/interior.jpg' },
-  { id: 'p1-img-1', projectId: 'indie-vertical-slice', type: 'images', title: 'Interior Result', desc: 'Результат работы команды над интерьером', thumb: 'assets/interiorfin.png', url: 'assets/interiorfin.png' },
-  // Docs
-  { id: 'p1-doc-1', projectId: 'indie-vertical-slice', type: 'docs', title: 'Deep Dark — дизайн-документ', desc: 'Архитектура систем, core loop, прогрессия и экономика.', thumb: 'assets/portdd2.jpg', url: 'https://docs.google.com/document/d/1tuYnYBgn_0XKn6XKPoIbXnb5qh1lCGiyNpYdBebd8yA/edit?usp=sharing' },
+    // ===== indie-vertical-slice: Images =====
+    { id: 'ivs-img-1',  projectId: 'indie-vertical-slice', type: 'images', title: 'Deep Dark', desc: 'Первичный визуальный концепт', thumb: 'assets/portdd2.jpg', url: 'assets/portdd2.jpg' },
+    { id: 'ivs-img-2',  projectId: 'indie-vertical-slice', type: 'images', title: 'Визуал вертикального среза', desc: 'Результат работы команды на момент готовности среза', thumb: 'assets/ddslice.jpg', url: 'assets/ddslice.jpg' },
+    { id: 'ivs-img-3',  projectId: 'indie-vertical-slice', type: 'images', title: 'Global Core Loop', desc: 'Глобальная игровая петля', thumb: 'assets/coreloop.png', url: 'assets/coreloop.png' },
+    { id: 'ivs-img-4',  projectId: 'indie-vertical-slice', type: 'images', title: 'Craft Feature Spec', desc: 'Спецификация по системе крафта', thumb: 'assets/craftfeature.png', url: 'assets/craftfeature.png' },
+    { id: 'ivs-img-5',  projectId: 'indie-vertical-slice', type: 'images', title: 'Biomes Feature Spec', desc: 'Спецификация по системе биомов', thumb: 'assets/biomefeature.png', url: 'assets/biomefeature.png' },
+    { id: 'ivs-img-6',  projectId: 'indie-vertical-slice', type: 'images', title: 'Anomalies Event Feature Spec', desc: 'Спецификация по системе процедурных ивентов с аномалиями', thumb: 'assets/anomalies.png', url: 'assets/anomalies.png' },
+    { id: 'ivs-img-7',  projectId: 'indie-vertical-slice', type: 'images', title: 'Коллаж документации по проекту', desc: 'Демонстрация количества документов и описанных фич.', thumb: 'assets/docs.png', url: 'assets/docs.png' },
+    { id: 'ivs-img-8',  projectId: 'indie-vertical-slice', type: 'images', title: 'Drill Control UI blocking', desc: 'Блокинг управления движением бура', thumb: 'assets/drillcontrols.png', url: 'assets/drillcontrols.png' },
+    { id: 'ivs-img-9',  projectId: 'indie-vertical-slice', type: 'images', title: 'Level Design Spec', desc: 'Спецификация по левел-дизайну мира', thumb: 'assets/leveld.jpg', url: 'assets/leveld.jpg' },
+    { id: 'ivs-img-10', projectId: 'indie-vertical-slice', type: 'images', title: 'Enemy AI spec', desc: 'Спецификация интеллекта противника', thumb: 'assets/aispec.png', url: 'assets/aispec.png' },
+    { id: 'ivs-img-11', projectId: 'indie-vertical-slice', type: 'images', title: 'Interior Blocking', desc: 'Блокинг интерьера', thumb: 'assets/interior.jpg', url: 'assets/interior.jpg' },
+    { id: 'ivs-img-12', projectId: 'indie-vertical-slice', type: 'images', title: 'Interior Result', desc: 'Результат работы команды над интерьером', thumb: 'assets/interiorfin.png', url: 'assets/interiorfin.png' },
 
-  // Videos
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Video Mockup / Геймплейный мудборд', desc: 'Питчинг идеи: Быстрая демонстрация ключевых фич и атмосферы без затрат на полноценную разработку прототипа..', thumb: 'assets/portdd1.png', url: 'https://youtu.be/Uujr8dVtgCE' },
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Питч устройства игрового мира', desc: 'Питчинг идеи: Устройство уровней, ограничения, процедурная генерация и пр.', thumb: 'assets/portisland1.png', url: 'https://youtu.be/qizTr06SGXA' },
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Procedural Cave Level Design (local)', desc: 'Одна пещера. Тестирование процедурной генерации (dungen, scatter layers) в движке Unity.', url: 'https://youtu.be/n6Lz13CWtmg' },
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Procedural Cave Level Design (global)', desc: 'Группа пещер. Тестирование процедурной генерации (dungen, scatter layers) в движке Unity.', url: 'https://youtu.be/-W12R0rqnQM' },
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Interior Concept Blocking ', desc: 'Концепт интерьера холла со станциями крафта', url: 'https://youtu.be/2TiMkLFrvSA' },
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Worm Combat Prototyping ', desc: 'Прототип сражения с противником', url: 'https://youtu.be/em_6Gm1TQWw' },
-  { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: '3PV spawning animation test ', desc: 'Тестирование анимации возрождения от третьего лица', url: 'https://youtu.be/KiczLO-jhNQ' },
-   { id: 'p1-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'FPV spawning animation test ', desc: 'Тестирование анимации возрождения от первого лица', url: 'https://youtu.be/izihVmvvrdY' },
+    // ===== indie-vertical-slice: Docs =====
+    { id: 'ivs-doc-1', projectId: 'indie-vertical-slice', type: 'docs', title: 'Deep Dark — дизайн-документ', desc: 'Архитектура систем, core loop, прогрессия и экономика.', thumb: 'assets/portdd2.jpg', url: 'https://docs.google.com/document/d/1tuYnYBgn_0XKn6XKPoIbXnb5qh1lCGiyNpYdBebd8yA/edit?usp=sharing' },
 
-  // Images
-  { id: 'p1-img-1', projectId: 'mmo-systems', type: 'images', title: 'UX-схема системы инвентаря и переключаемого хотбара', desc: 'Дизайн-схема системы инвентаря игры, решающая проблему ограниченного количества hotbar-ячеек за счёт вложенной системы сабслотов.', thumb: 'assets/controls.jpg', url: 'assets/controls.jpg' },
-  { id: 'p3-img-1', projectId: 'mmo-systems', type: 'images', title: 'Rift Divers - концепт-борд препродакшена', desc: 'Визуальный концепт-борд проекта Rift Divers на этапе препродакшена. Содержит mind-map ключевой концепции, три варианта player flow (HUB → миссии → возврат), таблицы систем и данных, атмосферные референсы и материалы по модификации Thaumcraft.', thumb: 'assets/concept.png', url: 'assets/concept.png' },
-  { id: 'p3-img-3', projectId: 'mmo-systems', type: 'images', title: 'Slime Tech - Godot 3D', desc: 'Проектирование процедурной генерации тайлового мира для 3D-изометрического проекта. Двухслойная архитектура: статический слой terrain-генерации и runtime-слой разреженного чанкового хранилища сущностей, предметов и эффектов.', thumb: 'assets/slimegame.png', url: 'assets/slimegame.png' },
-  { id: 'p3-img-4', projectId: 'mmo-systems', type: 'images', title: 'Монетизация для проекта Minecraft (DAU 16000+)', desc: 'Коммерческий заказ на проектирование системы монетизации и отрисовку интерфейсов для проекта Minecraft.', thumb: 'assets/mc_int1.png', url: 'assets/mc_int1.png' },
+    // ===== indie-vertical-slice: Videos =====
+    { id: 'ivs-vid-1', projectId: 'indie-vertical-slice', type: 'videos', title: 'Video Mockup / Геймплейный мудборд', desc: 'Питчинг идеи: Быстрая демонстрация ключевых фич и атмосферы без затрат на полноценную разработку прототипа.', thumb: 'assets/portdd1.png', url: 'https://youtu.be/Uujr8dVtgCE' },
+    { id: 'ivs-vid-2', projectId: 'indie-vertical-slice', type: 'videos', title: 'Питч устройства игрового мира', desc: 'Питчинг идеи: Устройство уровней, ограничения, процедурная генерация и пр.', thumb: 'assets/portisland1.png', url: 'https://youtu.be/qizTr06SGXA' },
+    { id: 'ivs-vid-3', projectId: 'indie-vertical-slice', type: 'videos', title: 'Procedural Cave Level Design (local)', desc: 'Одна пещера. Тестирование процедурной генерации (dungen, scatter layers) в движке Unity.', url: 'https://youtu.be/n6Lz13CWtmg' },
+    { id: 'ivs-vid-4', projectId: 'indie-vertical-slice', type: 'videos', title: 'Procedural Cave Level Design (global)', desc: 'Группа пещер. Тестирование процедурной генерации (dungen, scatter layers) в движке Unity.', url: 'https://youtu.be/-W12R0rqnQM' },
+    { id: 'ivs-vid-5', projectId: 'indie-vertical-slice', type: 'videos', title: 'Interior Concept Blocking', desc: 'Концепт интерьера холла со станциями крафта', url: 'https://youtu.be/2TiMkLFrvSA' },
+    { id: 'ivs-vid-6', projectId: 'indie-vertical-slice', type: 'videos', title: 'Worm Combat Prototyping', desc: 'Прототип сражения с противником', url: 'https://youtu.be/em_6Gm1TQWw' },
+    { id: 'ivs-vid-7', projectId: 'indie-vertical-slice', type: 'videos', title: '3PV spawning animation test', desc: 'Тестирование анимации возрождения от третьего лица', url: 'https://youtu.be/KiczLO-jhNQ' },
+    { id: 'ivs-vid-8', projectId: 'indie-vertical-slice', type: 'videos', title: 'FPV spawning animation test', desc: 'Тестирование анимации возрождения от первого лица', url: 'https://youtu.be/izihVmvvrdY' },
 
-  // Docs
-  { id: 'p3-doc-2', projectId: 'mmo-systems', type: 'docs', title: 'Маркетинговая игра / автобаттлер', desc: 'Документ по игровому прототипу для внешней презентационной задачи.', thumb: 'assets/portdd1.png', url: 'https://docs.google.com/document/d/1dYlUL_3MdEi0DdIy9tmsDItKH-pLdLVMMMSFcSClCHU/edit?usp=sharing' },
-  { id: 'p3-doc-3', projectId: 'mmo-systems', type: 'docs', title: 'Аудит проекта', desc: 'Разбор раннего пользовательского опыта с рекомендациями по снижению оттока.', url: 'https://docs.google.com/document/d/14r-Gfi4MADMNFCGST2NVYu9pUiRCRhmV2iDbxWTHOGw/edit?usp=sharing' },
-  { id: 'p3-doc-4', projectId: 'mmo-systems', type: 'docs', title: 'ТЗ - серверная система матчмейкинга', desc: 'Документ проектирования серверной игровой системы, отвечающей за подбор, распределение и телепортацию игроков в разломы с учётом веса игрока, веса инстансов, pity-логики, антиабуза, кластерной архитектуры, интеграций с плагинами и телеметрии.', url: 'https://docs.google.com/document/d/1yitAQe5DrLvsaGn0NdETyFhLwL6n7WP28c1eLlYugzU/edit?usp=sharing' },
+    // ===== mmo-systems: Images =====
+    { id: 'ms-img-1', projectId: 'mmo-systems', type: 'images', title: 'UX-схема системы инвентаря и переключаемого хотбара', desc: 'Дизайн-схема системы инвентаря игры, решающая проблему ограниченного количества hotbar-ячеек за счёт вложенной системы сабслотов.', thumb: 'assets/controls.jpg', url: 'assets/controls.jpg' },
+    { id: 'ms-img-2', projectId: 'mmo-systems', type: 'images', title: 'Rift Divers - концепт-борд препродакшена', desc: 'Визуальный концепт-борд проекта Rift Divers на этапе препродакшена. Содержит mind-map ключевой концепции, три варианта player flow (HUB → миссии → возврат), таблицы систем и данных, атмосферные референсы и материалы по модификации Thaumcraft.', thumb: 'assets/concept.png', url: 'assets/concept.png' },
+    { id: 'ms-img-3', projectId: 'mmo-systems', type: 'images', title: 'Slime Tech - Godot 3D', desc: 'Проектирование процедурной генерации тайлового мира для 3D-изометрического проекта. Двухслойная архитектура: статический слой terrain-генерации и runtime-слой разреженного чанкового хранилища сущностей, предметов и эффектов.', thumb: 'assets/slimegame.png', url: 'assets/slimegame.png' },
+    { id: 'ms-img-4', projectId: 'mmo-systems', type: 'images', title: 'Монетизация для проекта Minecraft (DAU 16000+)', desc: 'Коммерческий заказ на проектирование системы монетизации и отрисовку интерфейсов для проекта Minecraft.', thumb: 'assets/mc_int1.png', url: 'assets/mc_int1.png' },
 
-  // Sheets
-  { id: 'p3-sheet-1', projectId: 'mmo-systems', type: 'sheets', title: 'Mobile RPG - Narrative Event Matrix', desc: 'Структурированная база данных энкаунтеров (событий), учитывающая параметры персонажа (возраст, пол, статус) и предлагающая ветвление на основе проверок характеристик (Charisma, Intellegence, Will и др.).', thumb: 'assets/portnar.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing'},
+    // ===== mmo-systems: Docs =====
+    { id: 'ms-doc-1', projectId: 'mmo-systems', type: 'docs', title: 'Маркетинговая игра / автобаттлер', desc: 'Документ по игровому прототипу для внешней презентационной задачи.', thumb: 'assets/portdd1.png', url: 'https://docs.google.com/document/d/1dYlUL_3MdEi0DdIy9tmsDItKH-pLdLVMMMSFcSClCHU/edit?usp=sharing' },
+    { id: 'ms-doc-2', projectId: 'mmo-systems', type: 'docs', title: 'Аудит проекта', desc: 'Разбор раннего пользовательского опыта с рекомендациями по снижению оттока.', url: 'https://docs.google.com/document/d/14r-Gfi4MADMNFCGST2NVYu9pUiRCRhmV2iDbxWTHOGw/edit?usp=sharing' },
+    { id: 'ms-doc-3', projectId: 'mmo-systems', type: 'docs', title: 'ТЗ - серверная система матчмейкинга', desc: 'Документ проектирования серверной игровой системы, отвечающей за подбор, распределение и телепортацию игроков в разломы с учётом веса игрока, веса инстансов, pity-логики, антиабуза, кластерной архитектуры, интеграций с плагинами и телеметрии.', url: 'https://docs.google.com/document/d/1yitAQe5DrLvsaGn0NdETyFhLwL6n7WP28c1eLlYugzU/edit?usp=sharing' },
 
-  // Prototypes
-  { id: 'p3-proto-1', projectId: 'mmo-systems', type: 'prototypes', title: 'Web - Azure Wars', desc: 'Быстрый прототип для продвижения Microsoft Azure Database for PostgreSQL.', thumb: 'assets/portdd2.jpg', url: 'https://azure-proto.vercel.app' },
+    // ===== mmo-systems: Sheets =====
+    { id: 'ms-sheet-1', projectId: 'mmo-systems', type: 'sheets', title: 'Mobile RPG - Narrative Event Matrix', desc: 'Структурированная база данных энкаунтеров (событий), учитывающая параметры персонажа (возраст, пол, статус) и предлагающая ветвление на основе проверок характеристик (Charisma, Intellegence, Will и др.).', thumb: 'assets/portnar.png', url: 'https://docs.google.com/spreadsheets/d/1-8gMWjEvwuZ9UmwPlMC8FHdpYcU5RM1jQL4GdhUO1-0/edit?usp=sharing' },
 
+    // ===== mmo-systems: Prototypes =====
+    { id: 'ms-proto-1', projectId: 'mmo-systems', type: 'prototypes', title: 'Web - Azure Wars', desc: 'Быстрый прототип для продвижения Microsoft Azure Database for PostgreSQL.', thumb: 'assets/portdd2.jpg', url: 'https://azure-proto.vercel.app' },
 
-  // Images
-  { id: 'p4-img-1', projectId: 'case-4', type: 'images', title: 'DAU 70000+', thumb: 'assets/fantasymmo.png', url: 'assets/fantasymmo.png' },
+    // ===== case-4: Images =====
+    { id: 'c4-img-1', projectId: 'case-4', type: 'images', title: 'DAU 70000+', thumb: 'assets/fantasymmo.png', url: 'assets/fantasymmo.png' },
 
-  // Images
-  { id: 'p5-img-1', projectId: 'case-5', type: 'images', title: 'DAU 100000+', thumb: 'assets/vehicle.png', url: 'assets/vehicle.png' },
-  
+    // ===== case-5: Images =====
+    { id: 'c5-img-1', projectId: 'case-5', type: 'images', title: 'DAU 100000+', thumb: 'assets/vehicle.png', url: 'assets/vehicle.png' },
 
-  // Images
-  { id: 'p6-img-1', projectId: 'case-6', type: 'images', title: 'DAU 10-70k', thumb: 'assets/draghun.jpg', url: 'assets/draghun.jpg' },
- ]
+    // ===== case-6: Images =====
+    { id: 'c6-img-1', projectId: 'case-6', type: 'images', title: 'DAU 10-70k', thumb: 'assets/draghun.jpg', url: 'assets/draghun.jpg' }
+  ]
 };
 
 window.PORTFOLIO_DATA = PORTFOLIO_DATA;
